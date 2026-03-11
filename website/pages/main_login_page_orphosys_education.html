@@ -1,0 +1,293 @@
+﻿<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Login - Orphosys Education</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0b50da",
+                        "background-light": "#f5f6f8",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 z-50 w-full bg-white/95 backdrop-blur-md border-b border-slate-200">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-20">
+<a class="flex items-center" href="../index.html">
+<img class="h-11 w-auto" src="../assets/nav_logo.png" alt="Orphosys" />
+</a>
+<nav class="hidden lg:flex items-center gap-8">
+<a class="text-sm font-semibold text-primary" href="../index.html">Home</a>
+
+<div class="relative group">
+<a class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors inline-flex items-center gap-1" href="../pages/about_us_with_team_photos.html">About
+<span class="material-symbols-outlined text-[18px]">expand_more</span>
+</a>
+<div class="absolute left-0 top-full pt-3 hidden group-hover:block">
+<div class="min-w-56 bg-slate-200 border border-slate-300 shadow-xl">
+<a class="block px-6 py-3 text-sm font-semibold text-slate-800 hover:bg-slate-100" href="../pages/about_us_with_team_photos.html">About</a>
+<a class="block px-6 py-3 text-sm font-semibold text-slate-800 hover:bg-slate-100" href="../pages/affiliation_orphosys_education.html">Affiliation</a>
+</div>
+</div>
+</div>
+
+<div class="relative group">
+<a class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors inline-flex items-center gap-1" href="../pages/affiliation_orphosys_education.html">Franchise
+<span class="material-symbols-outlined text-[18px]">expand_more</span>
+</a>
+<div class="absolute left-0 top-full pt-3 hidden group-hover:block">
+<div class="min-w-72 bg-slate-200 border border-slate-300 shadow-xl">
+<a class="block px-6 py-3 text-sm font-semibold text-slate-800 hover:bg-slate-100" href="../pages/affiliation_process_orphosys_education.html">Affiliation Process</a>
+<a class="block px-6 py-3 text-sm font-semibold text-slate-800 hover:bg-slate-100" href="../pages/apply_online_orphosys_education.html">Apply Online</a>
+<a class="block px-6 py-3 text-sm font-semibold text-slate-800 hover:bg-slate-100" href="../pages/main_login_page_orphosys_education.html">Study Centre Login</a>
+<a class="block px-6 py-3 text-sm font-semibold text-slate-800 hover:bg-slate-100" href="../pages/authorized_center_list_orphosys_education.html">Authorized Center List</a>
+</div>
+</div>
+</div>
+
+<div class="relative group">
+<a class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors inline-flex items-center gap-1" href="../pages/courses_orphosys_education.html">Courses
+<span class="material-symbols-outlined text-[18px]">expand_more</span>
+</a>
+<div class="absolute left-0 top-full pt-3 hidden group-hover:block">
+<div class="min-w-64 bg-slate-200 border border-slate-300 shadow-xl">
+<a class="block px-6 py-3 text-sm font-semibold text-slate-800 hover:bg-slate-100" href="../pages/courses_orphosys_education.html">Offline Courses</a>
+<a class="block px-6 py-3 text-sm font-semibold text-slate-800 hover:bg-slate-100" href="../pages/online_ready_courses_orphosys_education.html">Online Ready Courses</a>
+<a class="block px-6 py-3 text-sm font-semibold text-slate-800 hover:bg-slate-100" href="../pages/online_live_courses_orphosys_education.html">Online Live Courses</a>
+</div>
+</div>
+</div>
+
+<div class="relative group">
+<a class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors inline-flex items-center gap-1" href="../pages/photo_gallery_orphosys_education.html">Gallery
+<span class="material-symbols-outlined text-[18px]">expand_more</span>
+</a>
+<div class="absolute left-0 top-full pt-3 hidden group-hover:block">
+<div class="min-w-48 bg-slate-200 border border-slate-300 shadow-xl">
+<a class="block px-6 py-3 text-sm font-semibold text-slate-800 hover:bg-slate-100" href="../pages/photo_gallery_orphosys_education.html">Photo</a>
+<a class="block px-6 py-3 text-sm font-semibold text-slate-800 hover:bg-slate-100" href="../pages/video_gallery_orphosys_education.html">Video</a>
+</div>
+</div>
+</div>
+
+<div class="relative group">
+<a class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors inline-flex items-center gap-1" href="../pages/main_login_page_orphosys_education.html">Student
+<span class="material-symbols-outlined text-[18px]">expand_more</span>
+</a>
+<div class="absolute left-0 top-full pt-3 hidden group-hover:block">
+<div class="min-w-80 bg-slate-200 border border-slate-300 shadow-xl">
+<a class="block px-6 py-2.5 text-sm font-semibold text-slate-800 hover:bg-slate-100" href="../pages/student_login_orphosys_education_1.html">Student Registration</a>
+<a class="block px-6 py-2.5 text-sm font-semibold text-slate-800 hover:bg-slate-100" href="../pages/registration_process_orphosys_education.html">Registration Process</a>
+<a class="block px-6 py-2.5 text-sm font-semibold text-slate-800 hover:bg-slate-100" href="../pages/main_login_page_orphosys_education.html">Student Login</a>
+<a class="block px-6 py-2.5 text-sm font-semibold text-slate-800 hover:bg-slate-100" href="../pages/online_exam_portal_orphosys_education.html">Online Exam</a>
+<a class="block px-6 py-2.5 text-sm font-semibold text-slate-800 hover:bg-slate-100" href="../pages/online_mock_test_login_orphosys_education.html">Online Mock Test</a>
+<a class="block px-6 py-2.5 text-sm font-semibold text-slate-800 hover:bg-slate-100" href="../pages/student_id_card_login_orphosys_education.html">Student Id Card</a>
+<a class="block px-6 py-2.5 text-sm font-semibold text-slate-800 hover:bg-slate-100" href="../pages/student_admit_card_login_orphosys_education.html">Student Admit Card</a>
+<a class="block px-6 py-2.5 text-sm font-semibold text-slate-800 hover:bg-slate-100" href="../pages/certificate_download_login_orphosys_education.html">Certificate Download</a>
+<a class="block px-6 py-2.5 text-sm font-semibold text-slate-800 hover:bg-slate-100" href="../pages/marksheet_download_login_orphosys_education.html">Marksheet Download</a>
+<a class="block px-6 py-2.5 text-sm font-semibold text-slate-800 hover:bg-slate-100" href="../pages/e_book_download_login_orphosys_education.html">E-Book Download</a>
+<a class="block px-6 py-2.5 text-sm font-semibold text-slate-800 hover:bg-slate-100" href="../pages/job_notification_login_orphosys_education.html">Job Notification</a>
+</div>
+</div>
+</div>
+
+<a class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors" href="../pages/contact_us_orphosys_education.html">Contact Us</a>
+</nav>
+<div class="flex items-center gap-4">
+<a class="flex items-center gap-2 px-4 py-2 text-sm font-bold text-slate-700 bg-slate-100 rounded-lg hover:bg-slate-200 transition-all" href="../pages/sample_file_download_orphosys_education.html">
+<span class="material-symbols-outlined text-[20px]">download</span>
+Download
+</a>
+<a class="px-6 py-2 text-sm font-bold text-white bg-primary rounded-lg shadow-lg shadow-primary/20 hover:scale-105 active:scale-95 transition-all" href="../pages/main_login_page_orphosys_education.html">
+Login
+</a>
+</div>
+</div>
+</div>
+</header>
+<!-- Hero / Breadcrumb Section -->
+<section class="relative h-48 bg-slate-900 overflow-hidden">
+<div class="absolute inset-0 opacity-40 bg-cover bg-center" data-alt="Students studying in a modern library" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD2h37g_f5OiEei6Sa_YowpB9LMwB6xujjGlWTIAflRuApROBFdmJjbMc5alBa4To7eRJjAjasXtV2AMjOeclKhg3zvTM2JxyIWn9ezvU4it1k7qdWGkL5RpoNXrGWFTDd1Yl9sMz6FTQq3DR2mygxigHWr_ValpD9OKqRMg-enV5O4wftK7zhuyn23rkxGYyZLLekUQrLSyz2cCD8fU8sBhN1nvkwD5o-5qqkfwUkH3-FjttOYyQ7G7GEXuHRrrPvF2rrkPcK6WAE')"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-primary/80 to-transparent"></div>
+<div class="relative max-w-7xl mx-auto px-4 h-full flex flex-col justify-center">
+<h1 class="text-4xl font-bold text-white mb-2">Log in</h1>
+<nav class="flex items-center gap-2 text-white/80 text-sm font-medium">
+<a class="hover:text-white transition-colors" href="../index.html">Home</a>
+<span class="material-symbols-outlined text-xs">chevron_right</span>
+<span class="text-white">Log in</span>
+</nav>
+</div>
+</section>
+<!-- Main Content: Login Form Section -->
+<main class="max-w-7xl mx-auto px-4 py-16">
+<div class="bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col lg:flex-row min-h-[600px] border border-slate-100">
+<!-- Left Side: Image/Branding -->
+<div class="lg:w-1/2 relative bg-primary overflow-hidden hidden lg:block">
+<div class="absolute inset-0 opacity-20 bg-cover bg-center" data-alt="Online learning platform interface display" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBJ7uHh9YJqA9yu29g_-N458UbdWWbgLr8L66_3mJ50ZE0odY-h5mUd3buKBWa_ouAZU48y38CfDB3tl9cpygJkYjt5FUJ1-Q72hxUDK6nEudSVZGNm4cSWzEyr_V4D_dM8HpvQtFtr2WgjkOtwCpv8ftrXPoHLj-NT8BztHplh8MeoYig5jr1Ym2ZWPZj119IJtovYw0DLVVCjy4iyr62esH4oA-XYNpekHYjvq2EL9EeeU9OD6qGqkIOt2FTYQpVtOswoeWldnzQ')"></div>
+<div class="relative h-full flex flex-col justify-center p-12 text-white">
+<div class="mb-8">
+<span class="material-symbols-outlined text-6xl">account_circle</span>
+</div>
+<h2 class="text-4xl font-bold mb-6">Welcome Back to Orphosys</h2>
+<p class="text-xl text-primary-100 mb-8 leading-relaxed">Continue your educational journey with our comprehensive learning management system. Access your courses, certificates, and more.</p>
+<div class="space-y-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined bg-white/20 p-1.5 rounded-full text-sm">check</span>
+<span class="text-lg">Access all your enrolled courses</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined bg-white/20 p-1.5 rounded-full text-sm">check</span>
+<span class="text-lg">Download official certifications</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined bg-white/20 p-1.5 rounded-full text-sm">check</span>
+<span class="text-lg">Stay updated with institute news</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Side: Form -->
+<div class="lg:w-1/2 p-8 lg:p-16 flex flex-col justify-center">
+<div class="max-w-md mx-auto w-full">
+<div class="mb-10 text-center lg:text-left">
+<h3 class="text-3xl font-bold text-slate-900 mb-2">Sign In</h3>
+<p class="text-slate-500">Enter your credentials to access your student portal</p>
+</div>
+<form action="#" class="space-y-6">
+<div>
+<label class="block text-sm font-semibold text-slate-700 mb-2">Mobile / Registration Number</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">person</span>
+<input class="w-full pl-12 pr-4 py-4 rounded-xl border-slate-200 focus:border-primary focus:ring-4 focus:ring-primary/10 transition-all outline-none" placeholder="Enter your number" required="" type="text"/>
+</div>
+</div>
+<div>
+<div class="flex justify-between items-center mb-2">
+<label class="block text-sm font-semibold text-slate-700">Password</label>
+<a class="text-sm font-semibold text-primary hover:underline" href="#">Forgotten password?</a>
+</div>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">lock</span>
+<input class="w-full pl-12 pr-4 py-4 rounded-xl border-slate-200 focus:border-primary focus:ring-4 focus:ring-primary/10 transition-all outline-none" placeholder="â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢" required="" type="password"/>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<input class="w-4 h-4 rounded text-primary focus:ring-primary border-slate-300" id="remember" type="checkbox"/>
+<label class="text-sm text-slate-600" for="remember">Keep me logged in</label>
+</div>
+<button class="w-full bg-primary hover:bg-primary/90 text-white py-4 rounded-xl font-bold text-lg flex items-center justify-center gap-2 transition-all shadow-lg shadow-primary/20 group" type="submit">
+<span>Login to Account</span>
+<span class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
+</button>
+</form>
+<div class="mt-8 pt-8 border-t border-slate-100 text-center">
+<p class="text-slate-600">Don't have an account? <a class="text-primary font-bold hover:underline" href="#">Apply for Enrollment</a></p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 pt-24 pb-12 border-t border-slate-200">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid lg:grid-cols-4 gap-12 mb-16">
+<div class="col-span-1 lg:col-span-1">
+<div class="flex items-center gap-2 mb-6">
+<div class="size-8 bg-primary rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-[20px]">psychology</span>
+</div>
+<span class="text-xl font-black text-primary">ORPHOSYS</span>
+</div>
+<div class="space-y-6">
+<div>
+<h6 class="font-bold text-slate-900 mb-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">location_on</span>
+Howrah Office
+</h6>
+<p class="text-sm text-slate-600 leading-relaxed">
+45, Dumurjala Stadium Complex,<br/>
+Howrah, West Bengal - 711101
+</p>
+</div>
+<div>
+<h6 class="font-bold text-slate-900 mb-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">location_on</span>
+Kolkata Office
+</h6>
+<p class="text-sm text-slate-600 leading-relaxed">
+12B, Salt Lake Sector V,<br/>
+Kolkata, West Bengal - 700091
+</p>
+</div>
+</div>
+</div>
+<div>
+<h6 class="font-bold text-slate-900 mb-6 uppercase tracking-widest text-xs">Quick Links</h6>
+<ul class="space-y-4">
+<li><a class="text-sm text-slate-600 hover:text-primary transition-colors" href="../pages/courses_orphosys_education.html">Courses</a></li>
+<li><a class="text-sm text-slate-600 hover:text-primary transition-colors" href="../pages/affiliation_orphosys_education.html">Franchise</a></li>
+<li><a class="text-sm text-slate-600 hover:text-primary transition-colors" href="../pages/contact_us_orphosys_education.html">Contact Us</a></li>
+</ul>
+</div>
+<div class="col-span-1 lg:col-span-2">
+<h6 class="font-bold text-slate-900 mb-6 uppercase tracking-widest text-xs">Send Your Query</h6>
+<form class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<input class="bg-white border-slate-200 rounded-lg focus:ring-primary focus:border-primary text-sm p-3 w-full" placeholder="Full Name" type="text"/>
+<input class="bg-white border-slate-200 rounded-lg focus:ring-primary focus:border-primary text-sm p-3 w-full" placeholder="Email Address" type="email"/>
+<div class="col-span-1 md:col-span-2">
+<select class="bg-white border-slate-200 rounded-lg focus:ring-primary focus:border-primary text-sm p-3 w-full">
+<option>Select Enquiry Type</option>
+<option>Franchise Enquiry</option>
+<option>Offline Course Enquiry</option>
+<option>Online Course Enquiry</option>
+<option>Partnership Proposal</option>
+</select>
+</div>
+<div class="col-span-1 md:col-span-2">
+<textarea class="bg-white border-slate-200 rounded-lg focus:ring-primary focus:border-primary text-sm p-3 w-full" placeholder="Your Message" rows="3"></textarea>
+</div>
+<div class="col-span-1 md:col-span-2">
+<button class="w-full bg-primary text-white font-bold py-3 rounded-lg shadow-lg shadow-primary/20 hover:scale-[1.02] transition-all">Submit Enquiry</button>
+</div>
+</form>
+</div>
+</div>
+<div class="pt-12 border-t border-slate-200 flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="text-sm text-slate-500">Â© 2024 Orphosys Foundation. All rights reserved.</p>
+<div class="flex items-center gap-6">
+<a class="text-slate-400 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">social_leaderboard</span></a>
+<a class="text-slate-400 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">linked_camera</span></a>
+<a class="text-slate-400 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">mail</span></a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
