@@ -26,6 +26,20 @@
                         "display": ["Inter", "sans-serif"]
                     },
                     borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                    keyframes: {
+                        'fade-in-up': {
+                            '0%': { opacity: '0', transform: 'translateY(40px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        'fade-in': {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                    },
+                    animation: {
+                        'fade-in-up': 'fade-in-up 1s cubic-bezier(0.4,0,0.2,1) both',
+                        'fade-in': 'fade-in 1.2s cubic-bezier(0.4,0,0.2,1) both',
+                    },
                 },
             },
         }
@@ -130,49 +144,55 @@ Login
 </header>
 <main>
 <!-- Hero Section -->
-<section class="relative bg-white pt-16 pb-24 overflow-hidden">
+<section class="relative bg-gradient-to-br from-slate-50 to-white pt-20 pb-32 overflow-hidden">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="grid lg:grid-cols-2 gap-12 items-center">
-<div class="relative z-10">
-<span class="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest uppercase text-primary bg-primary/10 rounded-full">
-                            Nurturing Young Minds
-                        </span>
-<h1 class="text-5xl lg:text-6xl font-black text-slate-900 leading-[1.1] mb-8">
-                            Welcome To <span class="text-primary">Orphosys</span> Foundation
-                        </h1>
-<p class="text-lg text-slate-600 mb-10 leading-relaxed max-w-xl">
-                            The Leading Child Brain Development Institute empowering young minds through specialized programs and innovative learning techniques.
-                        </p>
-<div class="flex flex-wrap gap-4">
-<button class="px-8 py-4 bg-primary text-white font-bold rounded-xl shadow-xl shadow-primary/30 hover:bg-primary/90 transition-all flex items-center gap-2">
-                                Explore Courses
-                                <span class="material-symbols-outlined">trending_flat</span>
-</button>
-<button class="px-8 py-4 bg-white border-2 border-slate-200 text-slate-700 font-bold rounded-xl hover:border-primary hover:text-primary transition-all">
-                                Become a Franchisee
-                            </button>
-</div>
-</div>
-<div class="relative">
-<div class="w-full aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl bg-slate-100" data-alt="Children learning in a modern educational environment" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBt_ty9X06f1-dSYsHps6uJouN3HKA26kP28wVxfyMPJtxvGcO9ZoXB6ZafWDT82_aQZjwGQ-We3CopxzSsf64UaQj169k4p6l2S2wPTaIjBwdeD3nsqCi-0D6r0t5zHPXut3oabxksS8lF9EQUJnmxbDYaXFg_QPbjw6k-edcs6_3Ov69bLwCu8_t1-V8gXnaGCseQ-zqdvXOmaNGZd3yzVaRT7Qa7P93BWXlvjeR0jU9sBogb4Z6rFoNDOWWuq1CmxFl2QrkUFO0'); background-size: cover; background-position: center;"></div>
-<div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl max-w-[200px]">
-<div class="flex items-center gap-3 mb-2">
-<span class="material-symbols-outlined text-primary">groups</span>
-<span class="font-bold text-xl text-slate-900">5,000+</span>
-</div>
-<p class="text-sm text-slate-500 leading-tight">Students joined our programs last year</p>
-</div>
-</div>
-</div>
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="relative z-10 animate-fade-in-up">
+            <span class="inline-block px-5 py-2 mb-8 text-xs font-extrabold tracking-widest uppercase text-white bg-gradient-to-r from-primary to-blue-400 shadow-lg rounded-full">
+                Nurturing Young Minds
+            </span>
+            <h1 class="text-6xl lg:text-7xl font-black text-slate-900 leading-tight mb-8 drop-shadow-lg">
+                Welcome To <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-400">Orphosys</span> Foundation
+            </h1>
+            <p class="text-xl text-slate-700 mb-12 leading-relaxed max-w-2xl font-medium">
+                The Leading Child Brain Development Institute empowering young minds through specialized programs and innovative learning techniques.
+            </p>
+            <div class="flex flex-wrap gap-6">
+                <a href="pages/courses_orphosys_education.html" class="px-10 py-4 bg-gradient-to-r from-primary to-blue-400 text-white font-extrabold rounded-full shadow-xl hover:scale-105 hover:from-blue-500 hover:to-primary transition-all flex items-center gap-3 text-lg">
+                    <span class="material-symbols-outlined text-2xl">school</span>
+                    Explore Courses
+                </a>
+                <a href="pages/affiliation_process_orphosys_education.html" class="px-10 py-4 bg-white border-2 border-primary text-primary font-extrabold rounded-full hover:bg-primary hover:text-white transition-all text-lg flex items-center gap-3">
+                    <span class="material-symbols-outlined text-2xl">business_center</span>
+                    Become a Franchisee
+                </a>
+            </div>
+        </div>
+        <div class="relative animate-fade-in">
+            <div class="w-full aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl bg-slate-100 border-4 border-primary/10" data-alt="Children learning in a modern educational environment" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBt_ty9X06f1-dSYsHps6uJouN3HKA26kP28wVxfyMPJtxvGcO9ZoXB6ZafWDT82_aQZjwGQ-We3CopxzSsf64UaQj169k4p6l2S2wPTaIjBwdeD3nsqCi-0D6r0t5zHPXut3oabxksS8lF9EQUJnmxbDYaXFg_QPbjw6k-edcs6_3Ov69bLwCu8_t1-V8gXnaGCseQ-zqdvXOmaNGZd3yzVaRT7Qa7P93BWXlvjeR0jU9sBogb4Z6rFoNDOWWuq1CmxFl2QrkUFO0'); background-size: cover; background-position: center;"></div>
+            <div class="absolute -bottom-8 -left-8 bg-white/90 p-8 rounded-2xl shadow-2xl max-w-[240px] border border-primary/10 flex flex-col items-start gap-2">
+                <div class="flex items-center gap-4 mb-1">
+                    <span class="material-symbols-outlined text-primary text-3xl">groups</span>
+                    <span class="font-black text-2xl text-slate-900">5,000+</span>
+                </div>
+                <p class="text-base text-slate-600 leading-tight font-semibold">Students joined our programs last year</p>
+            </div>
+        </div>
+    </div>
 </div>
 <!-- Decorative background element -->
 <div class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl pointer-events-none"></div>
 </section>
+<!-- Google Reviews Section will be moved to after Affiliations section -->
 <!-- Core Programs Grid -->
 <section class="py-24 bg-slate-50">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="text-center mb-16">
-<h2 class="text-3xl font-black text-slate-900 mb-4">Core Programs</h2>
+<h2 class="text-3xl font-black text-slate-900 mb-4">
+  <span style="display: inline-block; padding-bottom: 10px; background-image: url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 10%22 preserveAspectRatio=%22none%22%3E%3Cpath d=%22M0,8 Q50,0 100,8%22 stroke=%22%23b2c300%22 stroke-width=%224%22 fill=%22none%22 stroke-linecap=%22round%22/%3E%3C/svg%3E'); background-position: bottom center; background-size: 100% 10px; background-repeat: no-repeat;">
+    Core Programs
+  </span>
+</h2>
 <div class="w-20 h-1.5 bg-primary mx-auto rounded-full"></div>
 </div>
 <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
@@ -289,7 +309,11 @@ Login
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="flex justify-between items-end mb-16">
 <div>
-<h2 class="text-3xl font-black text-slate-900 mb-4">Popular Courses</h2>
+<h2 class="text-3xl font-black text-slate-900 mb-4">
+    <span style="display: inline-block; padding-bottom: 10px; background-image: url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 10%22 preserveAspectRatio=%22none%22%3E%3Cpath d=%22M0,8 Q50,0 100,8%22 stroke=%22%23b2c300%22 stroke-width=%224%22 fill=%22none%22 stroke-linecap=%22round%22/%3E%3C/svg%3E'); background-position: bottom center; background-size: 100% 10px; background-repeat: no-repeat;">
+        Popular Courses
+    </span>
+</h2>
 <p class="text-slate-600">Explore our most sought-after development programs</p>
 </div>
 <a class="text-primary font-bold flex items-center gap-2 group" href="#">
@@ -371,7 +395,11 @@ Login
 <section class="py-24 bg-white">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="text-center mb-16">
-<h2 class="text-3xl font-black text-slate-900 mb-4">Expert Instructors</h2>
+<h2 class="text-3xl font-black text-slate-900 mb-4">
+    <span style="display: inline-block; padding-bottom: 10px; background-image: url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 10%22 preserveAspectRatio=%22none%22%3E%3Cpath d=%22M0,8 Q50,0 100,8%22 stroke=%22%23b2c300%22 stroke-width=%224%22 fill=%22none%22 stroke-linecap=%22round%22/%3E%3C/svg%3E'); background-position: bottom center; background-size: 100% 10px; background-repeat: no-repeat;">
+        Expert Instructors
+    </span>
+</h2>
 <p class="text-slate-600">Learn from the industry leading specialists</p>
 </div>
 <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -454,27 +482,307 @@ Login
 </div>
 </div>
 </section>
-<!-- Affiliations & Collaborations -->
-<section class="py-16 bg-white border-b border-slate-100">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<h4 class="text-center text-sm font-bold text-slate-400 uppercase tracking-[0.2em] mb-12">Proud Partners &amp; Affiliations</h4>
-<div class="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-4xl text-primary">diversity_3</span>
-<span class="font-black text-2xl">ICHHEPURAN</span>
-</div>
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-4xl text-primary">favorite</span>
-<span class="font-black text-2xl">FORYOU</span>
-</div>
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-4xl text-primary">crown</span>
-<span class="font-black text-2xl">ROYAL LIVES</span>
-</div>
-</div>
-</div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<section class="py-16 bg-slate-50 border-b border-slate-200">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <div class="text-center mb-12">
+      <h4 class="text-sm font-bold text-blue-600 uppercase tracking-[0.2em] mb-2">Our Network</h4>
+      <h2 class="text-3xl font-extrabold text-slate-900">Proud Partners</h2>
+    </div>
+
+    <div class="swiper partnersSwiper !pb-14 px-2">
+      <div class="swiper-wrapper">
+        
+        <div class="swiper-slide h-auto">
+            <div class="h-full bg-white rounded-2xl shadow-sm border border-slate-100 p-6 flex flex-col items-center justify-center text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1 group">
+              <img src="assets/Proud Partners/Arpita Singh Roy.jpeg" alt="Arpita Singh Roy" class="w-24 h-24 object-cover rounded-full mb-3 border-2 border-blue-200 shadow" />
+              <div class="font-extrabold text-xl text-slate-800 mb-3 group-hover:text-blue-600 transition-colors">Arpita Singh Roy</div>
+              <span class="px-3 py-1 mb-3 text-[10px] font-bold tracking-wider text-blue-700 uppercase bg-blue-50 rounded-full">Channel Partner</span>
+              <div class="font-medium text-slate-600">Sahibganj (Jharkhand)</div>
+            </div>
+        </div>
+
+        <div class="swiper-slide h-auto">
+            <div class="h-full bg-white rounded-2xl shadow-sm border border-slate-100 p-6 flex flex-col items-center justify-center text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1 group">
+              <img src="assets/Proud Partners/Abhijit Sen.jpeg" alt="Abhijit Sen" class="w-24 h-24 object-cover rounded-full mb-3 border-2 border-blue-200 shadow" />
+              <div class="font-extrabold text-xl text-slate-800 mb-3 group-hover:text-blue-600 transition-colors">Abhijit Sen</div>
+              <span class="px-3 py-1 mb-3 text-[10px] font-bold tracking-wider text-blue-700 uppercase bg-blue-50 rounded-full">Channel Partner</span>
+              <div class="font-medium text-slate-600 capitalize">Panskura</div>
+            </div>
+        </div>
+
+        <div class="swiper-slide h-auto">
+            <div class="h-full bg-white rounded-2xl shadow-sm border border-slate-100 p-6 flex flex-col items-center justify-center text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1 group">
+              <img src="assets/Proud Partners/Koushik Ghosh.jpeg" alt="Koushik Ghosh" class="w-24 h-24 object-cover rounded-full mb-3 border-2 border-blue-200 shadow" />
+              <div class="font-extrabold text-xl text-slate-800 mb-3 group-hover:text-blue-600 transition-colors">Koushik Ghosh</div>
+              <span class="px-3 py-1 mb-3 text-[10px] font-bold tracking-wider text-blue-700 uppercase bg-blue-50 rounded-full">Channel Partner</span>
+              <div class="font-medium text-slate-600">Krishnagar</div>
+            </div>
+        </div>
+
+        <div class="swiper-slide h-auto">
+            <div class="h-full bg-white rounded-2xl shadow-sm border border-slate-100 p-6 flex flex-col items-center justify-center text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1 group">
+              <img src="assets/Proud Partners/Amitava Sengupta.jpeg" alt="Amitava Sengupta" class="w-24 h-24 object-cover rounded-full mb-3 border-2 border-blue-200 shadow" />
+              <div class="font-extrabold text-xl text-slate-800 mb-3 group-hover:text-blue-600 transition-colors">Amitava Sengupta</div>
+              <span class="px-3 py-1 mb-3 text-[10px] font-bold tracking-wider text-blue-700 uppercase bg-blue-50 rounded-full">Channel Partner</span>
+              <div class="font-medium text-slate-600">Howrah Maidan</div>
+            </div>
+        </div>
+
+        <div class="swiper-slide h-auto">
+                    <div class="h-full bg-white rounded-2xl shadow-sm border border-slate-100 p-6 flex flex-col items-center justify-center text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1 group">
+                        <img src="assets/Proud Partners/Bratin Roy.png" alt="Bratin Roy" class="w-24 h-24 object-cover rounded-full mb-3 border-2 border-blue-200 shadow" />
+                        <div class="font-extrabold text-xl text-slate-800 mb-3 group-hover:text-blue-600 transition-colors">Bratin Roy</div>
+                        <span class="px-3 py-1 mb-3 text-[10px] font-bold tracking-wider text-blue-700 uppercase bg-blue-50 rounded-full">Channel Partner</span>
+                        <div class="font-medium text-slate-600">Regent Estate</div>
+                    </div>
+        </div>
+
+        <div class="swiper-slide h-auto">
+                    <div class="h-full bg-white rounded-2xl shadow-sm border border-slate-100 p-6 flex flex-col items-center justify-center text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1 group">
+                        <img src="assets/Proud Partners/Samaresh Ghosh.jpeg" alt="Samaresh Ghosh" class="w-24 h-24 object-cover rounded-full mb-3 border-2 border-blue-200 shadow" />
+                        <div class="font-extrabold text-xl text-slate-800 mb-3 group-hover:text-blue-600 transition-colors">Samaresh Ghosh</div>
+                        <span class="px-3 py-1 mb-3 text-[10px] font-bold tracking-wider text-blue-700 uppercase bg-blue-50 rounded-full">Channel Partner</span>
+                        <div class="font-medium text-slate-600">Kankandighi</div>
+                    </div>
+        </div>
+
+        <div class="swiper-slide h-auto">
+                    <div class="h-full bg-white rounded-2xl shadow-sm border border-slate-100 p-6 flex flex-col items-center justify-center text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1 group">
+                        <img src="assets/Proud Partners/Tapan Barui.jpeg" alt="Tapan Barui" class="w-24 h-24 object-cover rounded-full mb-3 border-2 border-blue-200 shadow" />
+                        <div class="font-extrabold text-xl text-slate-800 mb-3 group-hover:text-blue-600 transition-colors">Tapan Barui</div>
+                        <span class="px-3 py-1 mb-3 text-[10px] font-bold tracking-wider text-blue-700 uppercase bg-blue-50 rounded-full">Channel Partner</span>
+                        <div class="font-medium text-slate-600">Ganderpukur</div>
+                    </div>
+        </div>
+
+        <div class="swiper-slide h-auto">
+                    <div class="h-full bg-white rounded-2xl shadow-sm border border-slate-100 p-6 flex flex-col items-center justify-center text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1 group">
+                        <img src="assets/Proud Partners/Suman Sinha Ro.png" alt="Suman Sinha Roy" class="w-24 h-24 object-cover rounded-full mb-3 border-2 border-blue-200 shadow" />
+                        <div class="font-extrabold text-xl text-slate-800 mb-3 group-hover:text-blue-600 transition-colors">Suman Sinha Roy</div>
+                        <span class="px-3 py-1 mb-3 text-[10px] font-bold tracking-wider text-blue-700 uppercase bg-blue-50 rounded-full">Channel Partner</span>
+                        <div class="font-medium text-slate-600">Tetikola</div>
+                    </div>
+        </div>
+
+        <div class="swiper-slide h-auto">
+                    <div class="h-full bg-white rounded-2xl shadow-sm border border-slate-100 p-6 flex flex-col items-center justify-center text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1 group">
+                        <img src="assets/Proud Partners/Apurba Gosh.png" alt="Apurba Gosh" class="w-24 h-24 object-cover rounded-full mb-3 border-2 border-blue-200 shadow" />
+                        <div class="font-extrabold text-xl text-slate-800 mb-3 group-hover:text-blue-600 transition-colors">Apurba Gosh</div>
+                        <span class="px-3 py-1 mb-3 text-[10px] font-bold tracking-wider text-blue-700 uppercase bg-blue-50 rounded-full">Channel Partner</span>
+                        <div class="font-medium text-slate-600">Gramshalika</div>
+                    </div>
+        </div>
+
+        <div class="swiper-slide h-auto">
+                    <div class="h-full bg-white rounded-2xl shadow-sm border border-slate-100 p-6 flex flex-col items-center justify-center text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1 group">
+                        <img src="assets/Proud Partners/Sumana Mallick.jpeg" alt="Sumana Mallick" class="w-24 h-24 object-cover rounded-full mb-3 border-2 border-blue-200 shadow" />
+                        <div class="font-extrabold text-xl text-slate-800 mb-3 group-hover:text-blue-600 transition-colors">Sumana Mallick</div>
+                        <span class="px-3 py-1 mb-3 text-[10px] font-bold tracking-wider text-blue-700 uppercase bg-blue-50 rounded-full">Channel Partner</span>
+                        <div class="font-medium text-slate-600">Santragachi</div>
+                    </div>
+        </div>
+
+        <div class="swiper-slide h-auto">
+                    <div class="h-full bg-white rounded-2xl shadow-sm border border-slate-100 p-6 flex flex-col items-center justify-center text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1 group">
+                        <img src="assets/Proud Partners/Arindam Banerjee.jpeg" alt="Arindam Banerjee" class="w-24 h-24 object-cover rounded-full mb-3 border-2 border-blue-200 shadow" />
+                        <div class="font-extrabold text-xl text-slate-800 mb-3 group-hover:text-blue-600 transition-colors">Arindam Banerjee</div>
+                        <span class="px-3 py-1 mb-3 text-[10px] font-bold tracking-wider text-blue-700 uppercase bg-blue-50 rounded-full">Channel Partner</span>
+                        <div class="font-medium text-slate-600">Sonarpur</div>
+                    </div>
+        </div>
+
+        <div class="swiper-slide h-auto">
+                    <div class="h-full bg-white rounded-2xl shadow-sm border border-slate-100 p-6 flex flex-col items-center justify-center text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1 group">
+                        <img src="assets/Proud Partners/Pronab Mondal.jpeg" alt="Pronab Mondal" class="w-24 h-24 object-cover rounded-full mb-3 border-2 border-blue-200 shadow" />
+                        <div class="font-extrabold text-xl text-slate-800 mb-3 group-hover:text-blue-600 transition-colors">Pronab Mondal</div>
+                        <span class="px-3 py-1 mb-3 text-[10px] font-bold tracking-wider text-blue-700 uppercase bg-blue-50 rounded-full">Channel Partner</span>
+                        <div class="font-medium text-slate-600">Barasat</div>
+                    </div>
+        </div>
+
+        <div class="swiper-slide h-auto">
+                    <div class="h-full bg-white rounded-2xl shadow-sm border border-slate-100 p-6 flex flex-col items-center justify-center text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1 group">
+                        <img src="assets/Proud Partners/Mitrapada Ganguly.jpeg" alt="Mitrapada Ganguly" class="w-24 h-24 object-cover rounded-full mb-3 border-2 border-blue-200 shadow" />
+                        <div class="font-extrabold text-xl text-slate-800 mb-3 group-hover:text-blue-600 transition-colors">Mitrapada Ganguly</div>
+                        <span class="px-3 py-1 mb-3 text-[10px] font-bold tracking-wider text-blue-700 uppercase bg-blue-50 rounded-full">Channel Partner</span>
+                        <div class="font-medium text-slate-600">Belboni</div>
+                    </div>
+        </div>
+
+        <div class="swiper-slide h-auto">
+                    <div class="h-full bg-white rounded-2xl shadow-sm border border-slate-100 p-6 flex flex-col items-center justify-center text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1 group">
+                        <img src="assets/Proud Partners/Indranil Biswas.jpeg" alt="Indranil Biswas" class="w-24 h-24 object-cover rounded-full mb-3 border-2 border-blue-200 shadow" />
+                        <div class="font-extrabold text-xl text-slate-800 mb-3 group-hover:text-blue-600 transition-colors">Indranil Biswas</div>
+                        <span class="px-3 py-1 mb-3 text-[10px] font-bold tracking-wider text-blue-700 uppercase bg-blue-50 rounded-full">Channel Partner</span>
+                        <div class="font-medium text-slate-600">Sodepur</div>
+                    </div>
+        </div>
+
+        <div class="swiper-slide h-auto">
+                    <div class="h-full bg-white rounded-2xl shadow-sm border border-slate-100 p-6 flex flex-col items-center justify-center text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1 group">
+                        <img src="assets/Proud Partners/Sumantra Hazra.jpg" alt="Sumantra Hazra" class="w-24 h-24 object-cover rounded-full mb-3 border-2 border-blue-200 shadow" />
+                        <div class="font-extrabold text-xl text-slate-800 mb-3 group-hover:text-blue-600 transition-colors">Sumantra Hazra</div>
+                        <span class="px-3 py-1 mb-3 text-[10px] font-bold tracking-wider text-blue-700 uppercase bg-blue-50 rounded-full">Channel Partner</span>
+                        <div class="font-medium text-slate-600">Puraton Jhargram</div>
+                    </div>
+        </div>
+
+        <div class="swiper-slide h-auto">
+                    <div class="h-full bg-white rounded-2xl shadow-sm border border-purple-100 p-6 flex flex-col items-center justify-center text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1 group relative overflow-hidden">
+                        <div class="absolute top-0 w-full h-1 bg-purple-500"></div>
+                        <img src="assets/Proud Partners/R K Dada.jpg" alt="R K Dada" class="w-24 h-24 object-cover rounded-full mb-3 border-2 border-purple-200 shadow" />
+                        <div class="font-extrabold text-xl text-slate-800 mb-3 group-hover:text-purple-600 transition-colors">R K Dada</div>
+                        <span class="px-3 py-1 mb-3 text-[10px] font-bold tracking-wider text-purple-700 uppercase bg-purple-50 rounded-full">District Partner</span>
+                        <div class="font-medium text-slate-600">Coochbehar</div>
+                    </div>
+        </div>
+
+        <div class="swiper-slide h-auto">
+                    <div class="h-full bg-white rounded-2xl shadow-sm border border-slate-100 p-6 flex flex-col items-center justify-center text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1 group">
+                        <img src="assets/Proud Partners/Amit Paul.jpg" alt="Amit Paul" class="w-24 h-24 object-cover rounded-full mb-3 border-2 border-blue-200 shadow" />
+                        <div class="font-extrabold text-xl text-slate-800 mb-3 group-hover:text-blue-600 transition-colors">Amit Paul</div>
+                        <span class="px-3 py-1 mb-3 text-[10px] font-bold tracking-wider text-blue-700 uppercase bg-blue-50 rounded-full">Channel Partner</span>
+                        <div class="font-medium text-slate-600">Dinhata</div>
+                    </div>
+        </div>
+
+        <div class="swiper-slide h-auto">
+                    <div class="h-full bg-white rounded-2xl shadow-sm border border-slate-100 p-6 flex flex-col items-center justify-center text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1 group">
+                        <img src="assets/Proud Partners/Pradip Narayan Sadhu.jpg" alt="Pradip Narayan Sadhu" class="w-24 h-24 object-cover rounded-full mb-3 border-2 border-blue-200 shadow" />
+                        <div class="font-extrabold text-xl text-slate-800 mb-3 group-hover:text-blue-600 transition-colors">Pradip Narayan Sadhu</div>
+                        <span class="px-3 py-1 mb-3 text-[10px] font-bold tracking-wider text-blue-700 uppercase bg-blue-50 rounded-full">Channel Partner</span>
+                        <div class="font-medium text-slate-600">Barrackpore</div>
+                    </div>
+        </div>
+
+        <div class="swiper-slide h-auto">
+                    <div class="h-full bg-white rounded-2xl shadow-sm border border-slate-100 p-6 flex flex-col items-center justify-center text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1 group">
+                        <img src="assets/Proud Partners/Ashish Biswas.jpeg" alt="Ashish Biswas" class="w-24 h-24 object-cover rounded-full mb-3 border-2 border-blue-200 shadow" />
+                        <div class="font-extrabold text-xl text-slate-800 mb-3 group-hover:text-blue-600 transition-colors">Ashish Biswas</div>
+                        <span class="px-3 py-1 mb-3 text-[10px] font-bold tracking-wider text-blue-700 uppercase bg-blue-50 rounded-full">Channel Partner</span>
+                        <div class="font-medium text-slate-600">Benachity</div>
+                    </div>
+        </div>
+
+        <div class="swiper-slide h-auto">
+                    <div class="h-full bg-white rounded-2xl shadow-sm border border-slate-100 p-6 flex flex-col items-center justify-center text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1 group">
+                        <img src="assets/Proud Partners/Samit Mazumder.jpeg" alt="Samit Mazumder" class="w-24 h-24 object-cover rounded-full mb-3 border-2 border-blue-200 shadow" />
+                        <div class="font-extrabold text-xl text-slate-800 mb-3 group-hover:text-blue-600 transition-colors">Samit Mazumder</div>
+                        <span class="px-3 py-1 mb-3 text-[10px] font-bold tracking-wider text-blue-700 uppercase bg-blue-50 rounded-full">Channel Partner</span>
+                        <div class="font-medium text-slate-600">Agartala</div>
+                    </div>
+        </div>
+
+        <div class="swiper-slide h-auto">
+                    <div class="h-full bg-white rounded-2xl shadow-sm border border-slate-100 p-6 flex flex-col items-center justify-center text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1 group">
+                        <img src="assets/Proud Partners/Chandrani Das.jpeg" alt="Chandrani Das" class="w-24 h-24 object-cover rounded-full mb-3 border-2 border-blue-200 shadow" />
+                        <div class="font-extrabold text-xl text-slate-800 mb-3 group-hover:text-blue-600 transition-colors">Chandrani Das</div>
+                        <span class="px-3 py-1 mb-3 text-[10px] font-bold tracking-wider text-blue-700 uppercase bg-blue-50 rounded-full">Channel Partner</span>
+                        <div class="font-medium text-slate-600">Sripally</div>
+                    </div>
+        </div>
+
+        <div class="swiper-slide h-auto">
+             <div class="h-full bg-white rounded-2xl shadow-sm border border-purple-100 p-6 flex flex-col items-center justify-center text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1 group relative overflow-hidden">
+                 <div class="absolute top-0 w-full h-1 bg-purple-500"></div>
+                <img src="assets/Proud Partners/Anind a Patra.jpeg" alt="Anindya Patra" class="w-24 h-24 object-cover rounded-full mb-3 border-2 border-purple-200 shadow" />
+                <div class="font-extrabold text-xl text-slate-800 mb-3 group-hover:text-purple-600 transition-colors">Anindya Patra</div>
+                <span class="px-3 py-1 mb-3 text-[10px] font-bold tracking-wider text-purple-700 uppercase bg-purple-50 rounded-full">District Partner</span>
+                <div class="font-medium text-slate-600">Medinipur</div>
+             </div>
+        </div>
+
+        <div class="swiper-slide h-auto">
+                    <div class="h-full bg-white rounded-2xl shadow-sm border border-slate-100 p-6 flex flex-col items-center justify-center text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1 group">
+                        <img src="assets/Proud Partners/Soumen kundu.jpeg" alt="Soumen Kundu" class="w-24 h-24 object-cover rounded-full mb-3 border-2 border-blue-200 shadow" />
+                        <div class="font-extrabold text-xl text-slate-800 mb-3 group-hover:text-blue-600 transition-colors">Soumen Kundu</div>
+                        <span class="px-3 py-1 mb-3 text-[10px] font-bold tracking-wider text-blue-700 uppercase bg-blue-50 rounded-full">Channel Partner</span>
+                        <div class="font-medium text-slate-600">Kaliganj, Durgapur</div>
+                    </div>
+        </div>
+
+      </div>
+      
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next !text-blue-600 after:!text-xl hidden md:flex"></div>
+      <div class="swiper-button-prev !text-blue-600 after:!text-xl hidden md:flex"></div>
+    </div>
+  </div>
 </section>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var swiper = new Swiper(".partnersSwiper", {
+      // Mobile first approach
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        dynamicBullets: true, // Clean look for many slides
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      // Responsive breakpoints
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 24,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 24,
+        },
+      },
+    });
+  });
+</script>
 </main>
+<!-- Google Reviews Section (moved) -->
+<section class="py-24 bg-slate-50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-black text-slate-900 mb-4">
+                <span class="svg-underline">What Our Students Say</span>
+            </h2>
+            <p class="text-slate-600 text-lg">Read real reviews from our Google Business Profile</p>
+        </div>
+      <!-- Elfsight Google Reviews | Untitled Google Reviews -->
+<script src="https://elfsightcdn.com/platform.js" async></script>
+<div class="elfsight-app-31acbb98-98d4-409e-b606-781f54e64191" data-elfsight-app-lazy></div>
+</section>
+<script src="https://widgets.sociablekit.com/google-business-profile/widget.js" defer></script>
+<!-- Facebook Feed Section -->
+<section class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-2 sm:px-4 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-black text-slate-900 mb-4">
+                <span class="svg-underline">Follow Us On Facebook</span>
+            </h2>
+            <p class="text-slate-600 text-lg">Stay updated with our latest news and events</p>
+        </div>
+        <div class="w-full">
+            <!-- Elfsight Facebook Feed | Untitled Facebook Feed -->
+            <script src="https://elfsightcdn.com/platform.js" async></script>
+            <div class="elfsight-app-90774266-a9f3-4631-a14c-bc295a3c71ca" data-elfsight-app-lazy style="min-height:600px;width:100%"></div>
+        </div>
+    </div>
+</section>
 <!-- Footer -->
 <footer class="bg-slate-50 pt-24 pb-12 border-t border-slate-200">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -551,45 +859,96 @@ Kolkata, West Bengal - 700091
 </div>
 </footer>
     <!-- Service Information Modal -->
-    <div id="serviceModal" class="fixed inset-0 z-[100] flex items-center justify-center p-4 opacity-0 pointer-events-none transition-all duration-300">
-        <!-- Backdrop -->
-        <div class="absolute inset-0 bg-slate-900/60 backdrop-blur-md" onclick="closeServiceModal()"></div>
-        
-        <!-- Modal Content -->
-        <div class="relative w-full max-w-2xl bg-white rounded-3xl overflow-hidden shadow-2xl translate-y-8 transition-all duration-300 ease-out" id="modalContainer">
-            <button onclick="closeServiceModal()" class="absolute top-6 right-6 p-2 bg-slate-100 hover:bg-slate-200 text-slate-500 hover:text-slate-900 rounded-full transition-all z-10">
-                <span class="material-symbols-outlined">close</span>
-            </button>
-            
-            <div class="flex flex-col md:flex-row h-full">
-                <!-- Image Side (Hidden if no image) -->
-                <div id="modalImageContainer" class="hidden md:block md:w-2/5 bg-slate-100 overflow-hidden">
-                    <img id="modalImg" src="" alt="" class="w-full h-full object-cover object-top">
-                </div>
-                
-                <div class="p-8 md:p-12 md:w-3/5 overflow-y-auto max-h-[90vh]">
-                    <div id="modalIcon" class="w-16 h-16 rounded-2xl flex items-center justify-center mb-8">
-                        <!-- Icon injects here -->
+    <div id="serviceModal"
+     class="fixed inset-0 z-[100] flex items-center justify-center p-4 opacity-0 pointer-events-none transition duration-300">
+
+    <!-- Backdrop -->
+    <div class="absolute inset-0 bg-slate-900/70 backdrop-blur-sm transition-opacity"
+         onclick="closeServiceModal()"></div>
+
+    <!-- Modal -->
+    <div id="modalContainer"
+         class="relative w-full max-w-3xl bg-white/90 backdrop-blur-xl rounded-3xl shadow-2xl overflow-hidden
+         scale-95 opacity-0 transition-all duration-300">
+
+        <!-- Close Button -->
+        <button onclick="closeServiceModal()"
+                class="absolute top-5 right-5 z-20 p-2 rounded-full bg-white/80 backdrop-blur
+                hover:bg-white text-slate-500 hover:text-slate-900 transition shadow-md">
+            <span class="material-symbols-outlined">close</span>
+        </button>
+
+        <div class="flex flex-col md:flex-row">
+
+            <!-- Image -->
+            <div id="modalImageContainer"
+                 class="hidden md:block md:w-2/5 bg-slate-100 relative">
+
+                <img id="modalImg"
+                     src=""
+                     alt=""
+                     class="w-full h-full object-cover object-center">
+
+                <!-- Gradient overlay -->
+                <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+            </div>
+
+            <!-- Content -->
+            <div class="flex flex-col md:w-3/5 max-h-[90vh]">
+
+                <!-- Scroll Area -->
+                <div class="p-8 md:p-10 overflow-y-auto">
+
+                    <!-- Icon -->
+                    <div id="modalIcon"
+                         class="w-16 h-16 rounded-2xl flex items-center justify-center mb-6 shadow-lg">
                     </div>
-                    <h3 id="modalTitle" class="text-3xl font-black text-slate-900 mb-4">Program Title</h3>
-                    <p id="modalDescription" class="text-lg text-slate-600 mb-8 leading-relaxed">Description goes here.</p>
-                    
-                    <h4 class="font-bold text-slate-900 mb-4 flex items-center gap-2">
+
+                    <!-- Title -->
+                    <h3 id="modalTitle"
+                        class="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4">
+                        Program Title
+                    </h3>
+
+                    <!-- Description -->
+                    <p id="modalDescription"
+                       class="text-lg text-slate-600 leading-relaxed mb-8">
+                        Description goes here.
+                    </p>
+
+                    <!-- Features -->
+                    <h4 class="font-semibold text-slate-900 mb-4 flex items-center gap-2">
                         <span class="material-symbols-outlined text-primary">verified</span>
                         Key Features & Benefits
                     </h4>
-                    <ul id="modalFeatures" class="grid sm:grid-cols-2 gap-4 mb-10">
-                        <!-- Features inject here -->
+
+                    <ul id="modalFeatures"
+                        class="grid sm:grid-cols-2 gap-4">
                     </ul>
-                    
-                    <div class="flex flex-wrap gap-4 pt-8 border-t border-slate-100">
-                        <button class="px-8 py-3 bg-primary text-white font-bold rounded-xl shadow-lg shadow-primary/20 hover:bg-primary/90 transition-all">Enroll Now</button>
-                        <button onclick="closeServiceModal()" class="px-8 py-3 bg-slate-100 text-slate-700 font-bold rounded-xl hover:bg-slate-200 transition-all">Close Info</button>
-                    </div>
+
                 </div>
+
+                <!-- Sticky Footer -->
+                <div class="flex gap-4 p-6 border-t bg-white/80 backdrop-blur sticky bottom-0">
+
+                    <button
+                        class="flex-1 px-6 py-3 bg-primary text-white font-semibold rounded-xl
+                        shadow-lg shadow-primary/30 hover:scale-[1.03] hover:bg-primary/90 transition">
+                        Enroll Now
+                    </button>
+
+                    <button onclick="closeServiceModal()"
+                            class="flex-1 px-6 py-3 bg-slate-100 text-slate-700 font-semibold rounded-xl
+                            hover:bg-slate-200 transition">
+                        Close
+                    </button>
+
+                </div>
+
             </div>
         </div>
     </div>
+</div>
 
     <script>
         const serviceData = {
@@ -754,17 +1113,18 @@ Kolkata, West Bengal - 700091
 
         function openServiceModal(serviceKey) {
             const data = serviceData[serviceKey];
+            console.log('openServiceModal called with:', serviceKey, data);
             if (!data) return;
 
             const modal = document.getElementById('serviceModal');
             const container = document.getElementById('modalContainer');
-            
+
             // Populate
             document.getElementById('modalTitle').innerText = data.title;
             document.getElementById('modalDescription').innerText = data.desc;
             document.getElementById('modalIcon').className = `w-16 h-16 rounded-2xl flex items-center justify-center mb-8 ${data.color}`;
             document.getElementById('modalIcon').innerHTML = `<span class="material-symbols-outlined text-3xl">${data.icon}</span>`;
-            
+
             // Handle Instructor Image
             const imgContainer = document.getElementById('modalImageContainer');
             const modalImg = document.getElementById('modalImg');
@@ -787,6 +1147,7 @@ Kolkata, West Bengal - 700091
 
             // Show
             modal.classList.remove('opacity-0', 'pointer-events-none');
+            container.classList.remove('opacity-0', 'pointer-events-none', 'scale-95');
             // Force a reflow for animation
             void modal.offsetWidth;
             container.classList.remove('translate-y-8');
