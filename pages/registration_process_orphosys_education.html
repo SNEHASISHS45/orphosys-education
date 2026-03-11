@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Registration Process - Orphosys Education</title>
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="../assets/favicon/site.webmanifest">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "primary": "#0b50da",
+                "background-light": "#f5f6f8",
+                "background-dark": "#101622",
+              },
+              fontFamily: {
+                "display": ["Inter", "sans-serif"]
+              },
+              borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+            },
+          },
+        }
+      </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 z-50 w-full bg-white/95 backdrop-blur-md border-b border-slate-200">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-20">
+<a class="flex items-center" href="../index.html">
+<img class="h-16 w-auto transition-all duration-300 hover:scale-105" src="../assets/nav_logo.png" alt="Orphosys" />
+</a>
+<nav class="hidden lg:flex items-center gap-8">
+<a class="text-sm font-semibold text-primary" href="../index.html">Home</a>
+
+<div class="relative group">
+<a class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors inline-flex items-center gap-1" href="../pages/about_us_with_team_photos.html">About
+<span class="material-symbols-outlined text-[18px]">expand_more</span>
+</a>
+<div class="absolute left-0 top-full pt-3 opacity-0 translate-y-2 invisible group-hover:opacity-100 group-hover:translate-y-0 group-hover:visible transition-all duration-300 ease-out z-[60]">
+<div class="min-w-56 bg-white/80 backdrop-blur-xl border border-slate-200/50 shadow-2xl rounded-2xl overflow-hidden p-2">
+<a class="block px-4 py-2 text-sm font-semibold text-slate-800 hover:bg-primary/5 hover:text-primary rounded-xl transition-colors" href="../pages/about_us_with_team_photos.html">About</a>
+<a class="block px-4 py-2 text-sm font-semibold text-slate-800 hover:bg-primary/5 hover:text-primary rounded-xl transition-colors" href="../pages/affiliation_orphosys_education.html">Affiliation</a>
+</div>
+</div>
+</div>
+
+<div class="relative group">
+<a class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors inline-flex items-center gap-1" href="../pages/affiliation_orphosys_education.html">Franchise
+<span class="material-symbols-outlined text-[18px]">expand_more</span>
+</a>
+<div class="absolute left-0 top-full pt-3 opacity-0 translate-y-2 invisible group-hover:opacity-100 group-hover:translate-y-0 group-hover:visible transition-all duration-300 ease-out z-[60]">
+<div class="min-w-72 bg-white/80 backdrop-blur-xl border border-slate-200/50 shadow-2xl rounded-2xl overflow-hidden p-2">
+<a class="block px-4 py-2 text-sm font-semibold text-slate-800 hover:bg-primary/5 hover:text-primary rounded-xl transition-colors" href="../pages/affiliation_process_orphosys_education.html">Affiliation Process</a>
+<a class="block px-4 py-2 text-sm font-semibold text-slate-800 hover:bg-primary/5 hover:text-primary rounded-xl transition-colors" href="../pages/apply_online_orphosys_education.html">Apply Online</a>
+<a class="block px-4 py-2 text-sm font-semibold text-slate-800 hover:bg-primary/5 hover:text-primary rounded-xl transition-colors" href="../pages/main_login_page_orphosys_education.html">Study Centre Login</a>
+<a class="block px-4 py-2 text-sm font-semibold text-slate-800 hover:bg-primary/5 hover:text-primary rounded-xl transition-colors" href="../pages/authorized_center_list_orphosys_education.html">Authorized Center List</a>
+</div>
+</div>
+</div>
+
+<div class="relative group">
+<a class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors inline-flex items-center gap-1" href="../pages/courses_orphosys_education.html">Courses
+<span class="material-symbols-outlined text-[18px]">expand_more</span>
+</a>
+<div class="absolute left-0 top-full pt-3 opacity-0 translate-y-2 invisible group-hover:opacity-100 group-hover:translate-y-0 group-hover:visible transition-all duration-300 ease-out z-[60]">
+<div class="min-w-64 bg-white/80 backdrop-blur-xl border border-slate-200/50 shadow-2xl rounded-2xl overflow-hidden p-2">
+<a class="block px-4 py-2 text-sm font-semibold text-slate-800 hover:bg-primary/5 hover:text-primary rounded-xl transition-colors" href="../pages/courses_orphosys_education.html">Offline Courses</a>
+<a class="block px-4 py-2 text-sm font-semibold text-slate-800 hover:bg-primary/5 hover:text-primary rounded-xl transition-colors" href="../pages/online_ready_courses_orphosys_education.html">Online Ready Courses</a>
+<a class="block px-4 py-2 text-sm font-semibold text-slate-800 hover:bg-primary/5 hover:text-primary rounded-xl transition-colors" href="../pages/online_live_courses_orphosys_education.html">Online Live Courses</a>
+</div>
+</div>
+</div>
+
+<div class="relative group">
+<a class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors inline-flex items-center gap-1" href="../pages/photo_gallery_orphosys_education.html">Gallery
+<span class="material-symbols-outlined text-[18px]">expand_more</span>
+</a>
+<div class="absolute left-0 top-full pt-3 opacity-0 translate-y-2 invisible group-hover:opacity-100 group-hover:translate-y-0 group-hover:visible transition-all duration-300 ease-out z-[60]">
+<div class="min-w-48 bg-white/80 backdrop-blur-xl border border-slate-200/50 shadow-2xl rounded-2xl overflow-hidden p-2">
+<a class="block px-4 py-2 text-sm font-semibold text-slate-800 hover:bg-primary/5 hover:text-primary rounded-xl transition-colors" href="../pages/photo_gallery_orphosys_education.html">Photo</a>
+<a class="block px-4 py-2 text-sm font-semibold text-slate-800 hover:bg-primary/5 hover:text-primary rounded-xl transition-colors" href="../pages/video_gallery_orphosys_education.html">Video</a>
+</div>
+</div>
+</div>
+
+<div class="relative group">
+<a class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors inline-flex items-center gap-1" href="../pages/main_login_page_orphosys_education.html">Student
+<span class="material-symbols-outlined text-[18px]">expand_more</span>
+</a>
+<div class="absolute left-0 top-full pt-3 opacity-0 translate-y-2 invisible group-hover:opacity-100 group-hover:translate-y-0 group-hover:visible transition-all duration-300 ease-out z-[60]">
+<div class="min-w-80 bg-white/80 backdrop-blur-xl border border-slate-200/50 shadow-2xl rounded-2xl overflow-hidden p-2">
+<a class="block px-4 py-1.5 text-sm font-semibold text-slate-800 hover:bg-primary/5 hover:text-primary rounded-xl transition-colors" href="../pages/student_login_orphosys_education_1.html">Student Registration</a>
+<a class="block px-4 py-1.5 text-sm font-semibold text-slate-800 hover:bg-primary/5 hover:text-primary rounded-xl transition-colors" href="../pages/registration_process_orphosys_education.html">Registration Process</a>
+<a class="block px-4 py-1.5 text-sm font-semibold text-slate-800 hover:bg-primary/5 hover:text-primary rounded-xl transition-colors" href="../pages/main_login_page_orphosys_education.html">Student Login</a>
+<a class="block px-4 py-1.5 text-sm font-semibold text-slate-800 hover:bg-primary/5 hover:text-primary rounded-xl transition-colors" href="../pages/online_exam_portal_orphosys_education.html">Online Exam</a>
+<a class="block px-4 py-1.5 text-sm font-semibold text-slate-800 hover:bg-primary/5 hover:text-primary rounded-xl transition-colors" href="../pages/online_mock_test_login_orphosys_education.html">Online Mock Test</a>
+<a class="block px-4 py-1.5 text-sm font-semibold text-slate-800 hover:bg-primary/5 hover:text-primary rounded-xl transition-colors" href="../pages/student_id_card_login_orphosys_education.html">Student Id Card</a>
+<a class="block px-4 py-1.5 text-sm font-semibold text-slate-800 hover:bg-primary/5 hover:text-primary rounded-xl transition-colors" href="../pages/student_admit_card_login_orphosys_education.html">Student Admit Card</a>
+<a class="block px-4 py-1.5 text-sm font-semibold text-slate-800 hover:bg-primary/5 hover:text-primary rounded-xl transition-colors" href="../pages/certificate_download_login_orphosys_education.html">Certificate Download</a>
+<a class="block px-4 py-1.5 text-sm font-semibold text-slate-800 hover:bg-primary/5 hover:text-primary rounded-xl transition-colors" href="../pages/marksheet_download_login_orphosys_education.html">Marksheet Download</a>
+<a class="block px-4 py-1.5 text-sm font-semibold text-slate-800 hover:bg-primary/5 hover:text-primary rounded-xl transition-colors" href="../pages/e_book_download_login_orphosys_education.html">E-Book Download</a>
+<a class="block px-4 py-1.5 text-sm font-semibold text-slate-800 hover:bg-primary/5 hover:text-primary rounded-xl transition-colors" href="../pages/job_notification_login_orphosys_education.html">Job Notification</a>
+</div>
+</div>
+</div>
+
+<a class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors" href="../pages/contact_us_orphosys_education.html">Contact Us</a>
+</nav>
+<div class="flex items-center gap-4">
+<a class="flex items-center gap-2 px-4 py-2 text-sm font-bold text-slate-700 bg-slate-100 rounded-lg hover:bg-slate-200 transition-all" href="../pages/sample_file_download_orphosys_education.html">
+<span class="material-symbols-outlined text-[20px]">download</span>
+Download
+</a>
+<a class="px-6 py-2 text-sm font-bold text-white bg-primary rounded-lg shadow-lg shadow-primary/20 hover:scale-105 active:scale-95 transition-all" href="../pages/main_login_page_orphosys_education.html">
+Login
+</a>
+</div>
+</div>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative py-16 sm:py-24 overflow-hidden">
+<div class="absolute inset-0 bg-primary/5 -z-10"></div>
+<div class="absolute top-0 right-0 -translate-y-12 translate-x-12 size-96 bg-primary/10 rounded-full blur-3xl"></div>
+<div class="absolute bottom-0 left-0 translate-y-12 -translate-x-12 size-96 bg-primary/10 rounded-full blur-3xl"></div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+<span class="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest uppercase bg-primary/10 text-primary rounded-full">Official Process</span>
+<h1 class="text-4xl sm:text-6xl font-black text-slate-900 dark:text-white mb-6 tracking-tight">
+                    Registration <span class="text-primary">Process</span>
+</h1>
+<p class="max-w-3xl mx-auto text-lg text-slate-600 dark:text-slate-400 leading-relaxed font-medium">
+                    An Autonomous Body Registered Under Govt. Of West Bengal based On TR Act.1882 Govt. Of India. Inspired by National Task Force on IT &amp; Skill Development Govt. of India.
+                </p>
+<div class="mt-10 flex flex-wrap justify-center gap-4">
+<button class="bg-primary text-white px-8 py-4 rounded-xl font-bold text-lg hover:shadow-xl hover:shadow-primary/20 transition-all active:scale-95">
+                        Start Your Registration
+                    </button>
+<button class="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-slate-50 dark:hover:bg-slate-700 transition-all shadow-sm">
+                        View Course Catalog
+                    </button>
+</div>
+</div>
+</section>
+<!-- Main Content Layout -->
+<section class="py-16 bg-white dark:bg-background-dark">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid lg:grid-cols-12 gap-12 items-start">
+<!-- Left Column: Certifications & Recognition -->
+<div class="lg:col-span-5 space-y-8">
+<div class="relative rounded-2xl overflow-hidden aspect-[4/3] shadow-2xl group">
+<div class="absolute inset-0 bg-slate-900/20 group-hover:bg-slate-900/0 transition-all duration-500"></div>
+<img alt="Students learning" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Modern classroom with students learning computer technology" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGdFJPofqgLQGFgBK-6Kwut0Vm6K98cwoRUKhuLLhi2KFrjAVLb32WLVY_s8s3kga8aenG-yseH6Ro4Em4Z83v9_62fyCdpaOfYwUPq6CkCb6WkVQgTZAzsA8vsIQ3VLI5QmtIox-XDW-zJodHpQBbzz_bMR3Wigv5xHh1RAxhMBJj29hCaonelXd6jsMRGnA0HMRDQf_C4L1C2mYIgKxX-P5r_GhPRdeuZnt1xH72IvJvPXtyOh7iTfvU0e7TgI7rRtQYfOWXeAU"/>
+<div class="absolute bottom-6 left-6 right-6 p-6 bg-white/90 dark:bg-slate-900/90 backdrop-blur rounded-xl border-l-4 border-primary">
+<p class="text-sm font-bold text-primary mb-1">RECOGNIZED BY</p>
+<p class="text-slate-800 dark:text-slate-100 font-medium">Niti Aayog, C.R. Act. Ministry of HRD &amp; N.C.T. New Delhi</p>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="p-6 bg-slate-50 dark:bg-slate-800/50 rounded-2xl border border-slate-100 dark:border-slate-700">
+<span class="material-symbols-outlined text-primary mb-3 text-3xl">verified</span>
+<h4 class="font-bold text-slate-900 dark:text-white">TR Act. 1882</h4>
+<p class="text-xs text-slate-500 mt-1 uppercase tracking-wider font-semibold">Registered Body</p>
+</div>
+<div class="p-6 bg-slate-50 dark:bg-slate-800/50 rounded-2xl border border-slate-100 dark:border-slate-700">
+<span class="material-symbols-outlined text-primary mb-3 text-3xl">school</span>
+<h4 class="font-bold text-slate-900 dark:text-white">Skill Development</h4>
+<p class="text-xs text-slate-500 mt-1 uppercase tracking-wider font-semibold">National Task Force</p>
+</div>
+</div>
+</div>
+<!-- Right Column: Narrative Content -->
+<div class="lg:col-span-7">
+<div class="prose prose-slate dark:prose-invert max-w-none">
+<h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-8">Empowering Your Future through IT &amp; Skill Development</h2>
+<div class="space-y-6 text-slate-600 dark:text-slate-400 text-lg leading-relaxed">
+<p class="font-medium text-slate-800 dark:text-slate-200 italic border-l-4 border-primary/40 pl-6 py-2">
+                                    "Registered Under : Niti Aayog (Planning Commission), C.R. Act. Ministry of HRD Govt. of India &amp; N.C.T. New Delhi Govt. of India."
+                                </p>
+<p>
+                                    Want a good job? Want self identity and also want a well satisfied and well established life? Then we are bringing to you an efficient path to find your success. Hope all of you know that in this digital era, that is not enough to increase your degree level, besides of this you have to be more practical.
+                                </p>
+<div class="bg-primary/5 p-8 rounded-2xl border border-primary/10">
+<h3 class="text-xl font-bold text-primary mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined">lightbulb</span>
+                                        Practical Wisdom
+                                    </h3>
+<p class="text-slate-700 dark:text-slate-300">
+                                        Today you need the knowledge towards the gateway of your career. It is necessary to build you as a perfect man for your future. But whom do you depend on? Which course will you choose? What is the right decision among thousands of paths?
+                                    </p>
+</div>
+<p>
+                                    Be with us. Be dependable on <strong class="text-slate-900 dark:text-white">â€œORPHOSYS FOUNDATIONâ€</strong>. We must guide you towards your right path. In the country of Saffron, White and Green; we can build a Digital India of Unemployment free youth making a modern computer literacy (IT &amp; Skill Development) path.
+                                </p>
+</div>
+<div class="mt-10 flex items-center gap-6">
+<div class="flex -space-x-3">
+<img alt="Student" class="size-12 rounded-full border-4 border-white dark:border-slate-900 object-cover" data-alt="Student profile 1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgNm6noEWvog2A0529lOZzZYuKfflfef9woCh0Pv22MYwXa-S6CNt5JDsScXtC-zz2zJhlEHBwwE9DxKfNWIvc0G8ij--xbp27TQZqY7RcAkNF-Qrd6-Yl2w5LBFmv58QHlawiNg688AvaNWeDbqwovYicB1xyLH-NPe7LvR6UvgnLACdn1yt88KDTsbovguxRj3cYnscxf4adNjASS1wLgyfhBjD2JHZO8zpd0KeFPk3wv6c-Bby-2ybS1mhd52TgeISYGGGCsSE"/>
+<img alt="Student" class="size-12 rounded-full border-4 border-white dark:border-slate-900 object-cover" data-alt="Student profile 2" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUmV2QwypwUrGQNMC5HWom_ciOQSwZ0rg4wN-SI-N1vjKLNbGhJY9gPpegJwh8ABzjbAktPS2nQ4qTBX782iViiailQUuhMAkCLFEuIJFKJFRHgz7_A2ZKiOjB0bWLLZnotbaUXb6PwCd0ZzOw98Ix80MZCTTSqzfd_USciS6K-MG5RFsPqxcBkbBLj6Dvorw9_CBApYV9NkecxQaGE8pUsNrI6lJ_mwzxqu3WD9t16HlZ8e5j0QorSK5jxWEdR7AZnz1No17gPeU"/>
+<img alt="Student" class="size-12 rounded-full border-4 border-white dark:border-slate-900 object-cover" data-alt="Student profile 3" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqOOuyvKSfx6AdanBGX76SVeWeERMdX_91e5sFI0Ym_gBBhPFp0aYVVJMnETEuUEvCuvLhnpECP2FbYtYMdL6Om-X6opiaedfxozL9pyRudS66cxNlQ5-AbJb5yKOkcfJZT8tpWdynudylxw0fP4m-Tlb23Hykq8pu9MtgmXS6Wp2pt6HzUMRoD6K4PnGPrxUQOKbm0f3fR_THAbcPkOhPnbr6VrGHrSO2ZtZnaGkbw0SRN_nF-O5KRkiSOwC598DQY6zfybtY36Q"/>
+<div class="size-12 rounded-full border-4 border-white dark:border-slate-900 bg-primary flex items-center justify-center text-xs font-bold text-white uppercase tracking-tighter">+2k</div>
+</div>
+<p class="text-sm font-semibold text-slate-500 dark:text-slate-400">Join over 2,000+ registered students nationwide</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Form & Footer Section -->
+<footer class="bg-slate-50 pt-24 pb-12 border-t border-slate-200">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid lg:grid-cols-4 gap-12 mb-16">
+<div class="col-span-1 lg:col-span-1">
+<div class="flex items-center gap-2 mb-6">
+<div class="size-8 bg-primary rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-[20px]">psychology</span>
+</div>
+<span class="text-xl font-black text-primary">ORPHOSYS</span>
+</div>
+<div class="space-y-6">
+<div>
+<h6 class="font-bold text-slate-900 mb-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">location_on</span>
+Howrah Office
+</h6>
+<p class="text-sm text-slate-600 leading-relaxed">
+45, Dumurjala Stadium Complex,<br/>
+Howrah, West Bengal - 711101
+</p>
+</div>
+<div>
+<h6 class="font-bold text-slate-900 mb-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">location_on</span>
+Kolkata Office
+</h6>
+<p class="text-sm text-slate-600 leading-relaxed">
+12B, Salt Lake Sector V,<br/>
+Kolkata, West Bengal - 700091
+</p>
+</div>
+</div>
+</div>
+<div>
+<h6 class="font-bold text-slate-900 mb-6 uppercase tracking-widest text-xs">Quick Links</h6>
+<ul class="space-y-4">
+<li><a class="text-sm text-slate-600 hover:text-primary transition-colors" href="../pages/courses_orphosys_education.html">Courses</a></li>
+<li><a class="text-sm text-slate-600 hover:text-primary transition-colors" href="../pages/affiliation_orphosys_education.html">Franchise</a></li>
+<li><a class="text-sm text-slate-600 hover:text-primary transition-colors" href="../pages/contact_us_orphosys_education.html">Contact Us</a></li>
+</ul>
+</div>
+<div class="col-span-1 lg:col-span-2">
+<h6 class="font-bold text-slate-900 mb-6 uppercase tracking-widest text-xs">Send Your Query</h6>
+<form class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<input class="bg-white border-slate-200 rounded-lg focus:ring-primary focus:border-primary text-sm p-3 w-full" placeholder="Full Name" type="text"/>
+<input class="bg-white border-slate-200 rounded-lg focus:ring-primary focus:border-primary text-sm p-3 w-full" placeholder="Email Address" type="email"/>
+<div class="col-span-1 md:col-span-2">
+<select class="bg-white border-slate-200 rounded-lg focus:ring-primary focus:border-primary text-sm p-3 w-full">
+<option>Select Enquiry Type</option>
+<option>Franchise Enquiry</option>
+<option>Offline Course Enquiry</option>
+<option>Online Course Enquiry</option>
+<option>Partnership Proposal</option>
+</select>
+</div>
+<div class="col-span-1 md:col-span-2">
+<textarea class="bg-white border-slate-200 rounded-lg focus:ring-primary focus:border-primary text-sm p-3 w-full" placeholder="Your Message" rows="3"></textarea>
+</div>
+<div class="col-span-1 md:col-span-2">
+<button class="w-full bg-primary text-white font-bold py-3 rounded-lg shadow-lg shadow-primary/20 hover:scale-[1.02] transition-all">Submit Enquiry</button>
+</div>
+</form>
+</div>
+</div>
+<div class="pt-12 border-t border-slate-200 flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="text-sm text-slate-500">Â© 2024 Orphosys Foundation. All rights reserved.</p>
+<div class="flex items-center gap-6">
+<a class="text-slate-400 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">social_leaderboard</span></a>
+<a class="text-slate-400 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">linked_camera</span></a>
+<a class="text-slate-400 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">mail</span></a>
+</div>
+</div>
+</div>
+</footer>
+</main>
+</body></html>
+

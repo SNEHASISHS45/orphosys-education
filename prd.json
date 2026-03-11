@@ -1,0 +1,10 @@
+{
+  "name": "Orphosys Education",
+  "version": "1.0.0",
+  "description": "Educational platform for child brain development",
+  "goals": [
+    "Fix directory structure and link paths",
+    "Standardize navigation and image locations",
+    "Ensure favicon is correctly linked on all pages"
+  ]
+}

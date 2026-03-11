@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Video Gallery - Orphosys Education</title>
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="../assets/favicon/site.webmanifest">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0b50da",
+                        "background-light": "#f5f6f8",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 transition-colors duration-200">
+<div class="relative flex min-h-screen flex-col group/design-root overflow-x-hidden">
+<!-- Header -->
+<header class="sticky top-0 z-50 w-full bg-white/95 backdrop-blur-md border-b border-slate-200">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-20">
+<a class="flex items-center" href="../index.html">
+<img class="h-16 w-auto transition-all duration-300 hover:scale-105" src="../assets/nav_logo.png" alt="Orphosys" />
+</a>
+<nav class="hidden lg:flex items-center gap-8">
+<a class="text-sm font-semibold text-primary" href="../index.html">Home</a>
+
+<div class="relative group">
+<a class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors inline-flex items-center gap-1" href="../pages/about_us_with_team_photos.html">About
+<span class="material-symbols-outlined text-[18px]">expand_more</span>
+</a>
+<div class="absolute left-0 top-full pt-3 opacity-0 translate-y-2 invisible group-hover:opacity-100 group-hover:translate-y-0 group-hover:visible transition-all duration-300 ease-out z-[60]">
+<div class="min-w-56 bg-white/80 backdrop-blur-xl border border-slate-200/50 shadow-2xl rounded-2xl overflow-hidden p-2">
+<a class="block px-4 py-2 text-sm font-semibold text-slate-800 hover:bg-primary/5 hover:text-primary rounded-xl transition-colors" href="../pages/about_us_with_team_photos.html">About</a>
+<a class="block px-4 py-2 text-sm font-semibold text-slate-800 hover:bg-primary/5 hover:text-primary rounded-xl transition-colors" href="../pages/affiliation_orphosys_education.html">Affiliation</a>
+</div>
+</div>
+</div>
+
+<div class="relative group">
+<a class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors inline-flex items-center gap-1" href="../pages/affiliation_orphosys_education.html">Franchise
+<span class="material-symbols-outlined text-[18px]">expand_more</span>
+</a>
+<div class="absolute left-0 top-full pt-3 opacity-0 translate-y-2 invisible group-hover:opacity-100 group-hover:translate-y-0 group-hover:visible transition-all duration-300 ease-out z-[60]">
+<div class="min-w-72 bg-white/80 backdrop-blur-xl border border-slate-200/50 shadow-2xl rounded-2xl overflow-hidden p-2">
+<a class="block px-4 py-2 text-sm font-semibold text-slate-800 hover:bg-primary/5 hover:text-primary rounded-xl transition-colors" href="../pages/affiliation_process_orphosys_education.html">Affiliation Process</a>
+<a class="block px-4 py-2 text-sm font-semibold text-slate-800 hover:bg-primary/5 hover:text-primary rounded-xl transition-colors" href="../pages/apply_online_orphosys_education.html">Apply Online</a>
+<a class="block px-4 py-2 text-sm font-semibold text-slate-800 hover:bg-primary/5 hover:text-primary rounded-xl transition-colors" href="../pages/main_login_page_orphosys_education.html">Study Centre Login</a>
+<a class="block px-4 py-2 text-sm font-semibold text-slate-800 hover:bg-primary/5 hover:text-primary rounded-xl transition-colors" href="../pages/authorized_center_list_orphosys_education.html">Authorized Center List</a>
+</div>
+</div>
+</div>
+
+<div class="relative group">
+<a class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors inline-flex items-center gap-1" href="../pages/courses_orphosys_education.html">Courses
+<span class="material-symbols-outlined text-[18px]">expand_more</span>
+</a>
+<div class="absolute left-0 top-full pt-3 opacity-0 translate-y-2 invisible group-hover:opacity-100 group-hover:translate-y-0 group-hover:visible transition-all duration-300 ease-out z-[60]">
+<div class="min-w-64 bg-white/80 backdrop-blur-xl border border-slate-200/50 shadow-2xl rounded-2xl overflow-hidden p-2">
+<a class="block px-4 py-2 text-sm font-semibold text-slate-800 hover:bg-primary/5 hover:text-primary rounded-xl transition-colors" href="../pages/courses_orphosys_education.html">Offline Courses</a>
+<a class="block px-4 py-2 text-sm font-semibold text-slate-800 hover:bg-primary/5 hover:text-primary rounded-xl transition-colors" href="../pages/online_ready_courses_orphosys_education.html">Online Ready Courses</a>
+<a class="block px-4 py-2 text-sm font-semibold text-slate-800 hover:bg-primary/5 hover:text-primary rounded-xl transition-colors" href="../pages/online_live_courses_orphosys_education.html">Online Live Courses</a>
+</div>
+</div>
+</div>
+
+<div class="relative group">
+<a class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors inline-flex items-center gap-1" href="../pages/photo_gallery_orphosys_education.html">Gallery
+<span class="material-symbols-outlined text-[18px]">expand_more</span>
+</a>
+<div class="absolute left-0 top-full pt-3 opacity-0 translate-y-2 invisible group-hover:opacity-100 group-hover:translate-y-0 group-hover:visible transition-all duration-300 ease-out z-[60]">
+<div class="min-w-48 bg-white/80 backdrop-blur-xl border border-slate-200/50 shadow-2xl rounded-2xl overflow-hidden p-2">
+<a class="block px-4 py-2 text-sm font-semibold text-slate-800 hover:bg-primary/5 hover:text-primary rounded-xl transition-colors" href="../pages/photo_gallery_orphosys_education.html">Photo</a>
+<a class="block px-4 py-2 text-sm font-semibold text-slate-800 hover:bg-primary/5 hover:text-primary rounded-xl transition-colors" href="../pages/video_gallery_orphosys_education.html">Video</a>
+</div>
+</div>
+</div>
+
+<div class="relative group">
+<a class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors inline-flex items-center gap-1" href="../pages/main_login_page_orphosys_education.html">Student
+<span class="material-symbols-outlined text-[18px]">expand_more</span>
+</a>
+<div class="absolute left-0 top-full pt-3 opacity-0 translate-y-2 invisible group-hover:opacity-100 group-hover:translate-y-0 group-hover:visible transition-all duration-300 ease-out z-[60]">
+<div class="min-w-80 bg-white/80 backdrop-blur-xl border border-slate-200/50 shadow-2xl rounded-2xl overflow-hidden p-2">
+<a class="block px-4 py-1.5 text-sm font-semibold text-slate-800 hover:bg-primary/5 hover:text-primary rounded-xl transition-colors" href="../pages/student_login_orphosys_education_1.html">Student Registration</a>
+<a class="block px-4 py-1.5 text-sm font-semibold text-slate-800 hover:bg-primary/5 hover:text-primary rounded-xl transition-colors" href="../pages/registration_process_orphosys_education.html">Registration Process</a>
+<a class="block px-4 py-1.5 text-sm font-semibold text-slate-800 hover:bg-primary/5 hover:text-primary rounded-xl transition-colors" href="../pages/main_login_page_orphosys_education.html">Student Login</a>
+<a class="block px-4 py-1.5 text-sm font-semibold text-slate-800 hover:bg-primary/5 hover:text-primary rounded-xl transition-colors" href="../pages/online_exam_portal_orphosys_education.html">Online Exam</a>
+<a class="block px-4 py-1.5 text-sm font-semibold text-slate-800 hover:bg-primary/5 hover:text-primary rounded-xl transition-colors" href="../pages/online_mock_test_login_orphosys_education.html">Online Mock Test</a>
+<a class="block px-4 py-1.5 text-sm font-semibold text-slate-800 hover:bg-primary/5 hover:text-primary rounded-xl transition-colors" href="../pages/student_id_card_login_orphosys_education.html">Student Id Card</a>
+<a class="block px-4 py-1.5 text-sm font-semibold text-slate-800 hover:bg-primary/5 hover:text-primary rounded-xl transition-colors" href="../pages/student_admit_card_login_orphosys_education.html">Student Admit Card</a>
+<a class="block px-4 py-1.5 text-sm font-semibold text-slate-800 hover:bg-primary/5 hover:text-primary rounded-xl transition-colors" href="../pages/certificate_download_login_orphosys_education.html">Certificate Download</a>
+<a class="block px-4 py-1.5 text-sm font-semibold text-slate-800 hover:bg-primary/5 hover:text-primary rounded-xl transition-colors" href="../pages/marksheet_download_login_orphosys_education.html">Marksheet Download</a>
+<a class="block px-4 py-1.5 text-sm font-semibold text-slate-800 hover:bg-primary/5 hover:text-primary rounded-xl transition-colors" href="../pages/e_book_download_login_orphosys_education.html">E-Book Download</a>
+<a class="block px-4 py-1.5 text-sm font-semibold text-slate-800 hover:bg-primary/5 hover:text-primary rounded-xl transition-colors" href="../pages/job_notification_login_orphosys_education.html">Job Notification</a>
+</div>
+</div>
+</div>
+
+<a class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors" href="../pages/contact_us_orphosys_education.html">Contact Us</a>
+</nav>
+<div class="flex items-center gap-4">
+<a class="flex items-center gap-2 px-4 py-2 text-sm font-bold text-slate-700 bg-slate-100 rounded-lg hover:bg-slate-200 transition-all" href="../pages/sample_file_download_orphosys_education.html">
+<span class="material-symbols-outlined text-[20px]">download</span>
+Download
+</a>
+<a class="px-6 py-2 text-sm font-bold text-white bg-primary rounded-lg shadow-lg shadow-primary/20 hover:scale-105 active:scale-95 transition-all" href="../pages/main_login_page_orphosys_education.html">
+Login
+</a>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-1 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 w-full">
+<!-- Breadcrumbs -->
+<nav class="flex items-center gap-2 text-sm font-medium text-slate-500 dark:text-slate-400 mb-6">
+<a class="hover:text-primary transition-colors" href="../index.html">Home</a>
+<span class="material-symbols-outlined text-xs">chevron_right</span>
+<span class="text-slate-900 dark:text-white">Video</span>
+</nav>
+<!-- Page Title Section -->
+<div class="mb-10">
+<h2 class="text-4xl lg:text-5xl font-black tracking-tight text-slate-900 dark:text-white mb-2">Video Gallery</h2>
+<div class="h-1.5 w-24 bg-primary rounded-full"></div>
+</div>
+<!-- New Videos Section -->
+<section class="mb-20">
+<div class="flex items-center justify-between mb-8">
+<h3 class="text-2xl font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">new_releases</span>
+                        New Videos
+                    </h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Video Card 1 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-video overflow-hidden rounded-xl bg-slate-200 mb-4 shadow-sm">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Modern classroom with students learning computer science" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBIv9gkc-UqU0sryof5avpFGt-9OI-aC6dHsbPDtYwfUA6YWKssCYCmXZ5AuklyCt8fDkxhiLnVg1yW6ks1mmTlnKMWgA8oCZPCEaKB8vk06MsRmUtLyzVBM2XuE6emg3SW6Lz0LC247cLWJCOjXCQOtQI3fiWqSqe9neF4UwZKpOlNOi0fMl4rYn9g_NczDCB0K0ezaM57cWp3d7l5raxe5ut1oQ-TZ8DGFkE4Gsev7B3ALWtL_R7VroJIEAySV6hlfFlF3FrL1Zg')">
+</div>
+<div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center shadow-2xl scale-75 group-hover:scale-100 transition-transform">
+<span class="material-symbols-outlined text-4xl fill-current">play_arrow</span>
+</div>
+</div>
+<div class="absolute bottom-3 right-3 bg-black/70 text-white text-xs px-2 py-1 rounded font-bold">12:45</div>
+</div>
+<h4 class="font-bold text-lg text-slate-900 dark:text-white group-hover:text-primary transition-colors">Mastering Advanced Mathematics</h4>
+<p class="text-sm text-slate-500 dark:text-slate-400">Complete guide to calculus and trigonometry fundamentals.</p>
+</div>
+<!-- Video Card 2 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-video overflow-hidden rounded-xl bg-slate-200 mb-4 shadow-sm">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Science experiment with colorful laboratory equipment" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDyvGqm6VfInRYE_JEy6TnmWQIdrA6M-C4wEYEvtI6IPTbZ-xXhgfikaI2HGx6ZSNFlXz6sApEBEVnmaggeZR63jNyeHlCJXYVYuCvN_HSQfL438aZkrIb2dVTuhEdvEq7_uxRVzBtBqmHSBUxahqdvvJ8L0kX_mcfFTVIcGhPR3I0EHQz35CrZz-oCsXD7t5Wn9NKsAlR-dpx9EGUD_eiMkLkOSPvjJ7mknhVUUqxWWpHhFvA7_w5vxNeTPwO2D-KLOw9vN2hNseY')">
+</div>
+<div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center shadow-2xl scale-75 group-hover:scale-100 transition-transform">
+<span class="material-symbols-outlined text-4xl fill-current">play_arrow</span>
+</div>
+</div>
+<div class="absolute bottom-3 right-3 bg-black/70 text-white text-xs px-2 py-1 rounded font-bold">08:20</div>
+</div>
+<h4 class="font-bold text-lg text-slate-900 dark:text-white group-hover:text-primary transition-colors">Physics Lab: Energy Dynamics</h4>
+<p class="text-sm text-slate-500 dark:text-slate-400">Hands-on experiment demonstrating kinetic and potential energy.</p>
+</div>
+<!-- Video Card 3 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-video overflow-hidden rounded-xl bg-slate-200 mb-4 shadow-sm">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Teacher explaining English literature on a whiteboard" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAZQWkQDoVnHf10wqfATzcRYM3FEPYbZG1N8ZLNSEXjfhxAB5NI4TA_nSsJhKtkixu0qAADAtnL2bDn9a_AdpJiM-Guwry5NIO20vyMEesBp9f-QYyogq_2unOyyO-cnlTFYK77E_voLZ53c_N05ceUP5cX7syJO8o1MHIDIhXfXS9twzIUDLjItk5WVJUh55vSiyp6lUGlX3DU0CA7ue5i73wcHotBRTjVFiKseLmp3Yf1NGobKyf8on5iFRIRWe2xsyvFpSVOPqY')">
+</div>
+<div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center shadow-2xl scale-75 group-hover:scale-100 transition-transform">
+<span class="material-symbols-outlined text-4xl fill-current">play_arrow</span>
+</div>
+</div>
+<div class="absolute bottom-3 right-3 bg-black/70 text-white text-xs px-2 py-1 rounded font-bold">15:10</div>
+</div>
+<h4 class="font-bold text-lg text-slate-900 dark:text-white group-hover:text-primary transition-colors">English Literature Seminar</h4>
+<p class="text-sm text-slate-500 dark:text-slate-400">Deep dive into classical Shakespearean sonnets.</p>
+</div>
+<!-- Video Card 4 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-video overflow-hidden rounded-xl bg-slate-200 mb-4 shadow-sm">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Biology students looking through microscopes" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAYfnAEU-FB2kCjNwIye-t_4K7wJMdEIhajGEoYvK8NoPeAGU9wN-l9jdV9DyOOP1t9ZsrQjTvMEhjPZzkHDvmsrsy9RwvRDoT8haT5MKm5Xn2P5PNCrVeoQWb4TDVIGxRtYWrAHXg-3juVQCIMJ_BiabDhI9vgFIbfORdCzgAMCdV3otd7N3tay4XJDzmSG8DQWaaZVAOT8u9D_Fu8ghzCzEM8YfHhrpkidxU4DdonjbSoL7mHMDibInCA9_kTRlPUKShgasgij1I')">
+</div>
+<div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center shadow-2xl scale-75 group-hover:scale-100 transition-transform">
+<span class="material-symbols-outlined text-4xl fill-current">play_arrow</span>
+</div>
+</div>
+<div class="absolute bottom-3 right-3 bg-black/70 text-white text-xs px-2 py-1 rounded font-bold">10:30</div>
+</div>
+<h4 class="font-bold text-lg text-slate-900 dark:text-white group-hover:text-primary transition-colors">Cellular Biology Workshop</h4>
+<p class="text-sm text-slate-500 dark:text-slate-400">Visualizing cell structures and organelles in detail.</p>
+</div>
+<!-- Video Card 5 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-video overflow-hidden rounded-xl bg-slate-200 mb-4 shadow-sm">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Student studying with a laptop and coffee" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBpJB0kytFT98guKo1ctp_PkuF4CF9Qg2_DJMLn5j-_b0HCHoukre5Tmc3yo2GMQZHHVbazkjpwubVVIuPcNHhbhI8TOotjJFunBrHvygOVAKfRY0I_bSUErJ-4OKI5x3W1j1WqA89kxBQI5DayP3IIqFpnUs8FCLy80X5XNJc64b-VPifBVCAJN2DmlC_zsE4XpgPerqsGqOcMk6DlxEz7EgJl5_BMIhq16Pp4xc4Rw-HiBf7weQ9v8VsUvH6NI12WTFNDNLzOGWw')">
+</div>
+<div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center shadow-2xl scale-75 group-hover:scale-100 transition-transform">
+<span class="material-symbols-outlined text-4xl fill-current">play_arrow</span>
+</div>
+</div>
+<div class="absolute bottom-3 right-3 bg-black/70 text-white text-xs px-2 py-1 rounded font-bold">22:00</div>
+</div>
+<h4 class="font-bold text-lg text-slate-900 dark:text-white group-hover:text-primary transition-colors">Effective Study Techniques</h4>
+<p class="text-sm text-slate-500 dark:text-slate-400">Scientific methods to improve memory and concentration.</p>
+</div>
+<!-- Video Card 6 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-video overflow-hidden rounded-xl bg-slate-200 mb-4 shadow-sm">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Collection of old books in a library" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBYRWSPHYBCxgrthv1EYaePiCwq3aBuuT62TKAvtgrAc6vmpYks0jM0rL8CM51proPBprnFfOiRakP9rr5R0_lu1Sa1ltu-b9TxXFECUEGliPHV9CVeov7ISSiwriEvmBrZpxCCbkxMhXQZ0OKmLwHZlS73C3Jw74P74Hk1XaWauIBEHQfZexQwW1KlnV7hx7RLVeAKmxBzEm4a-lGAuxnmitErx2LdB2bMB-92Jp5kWK_jID72RxeMZPoh74e4QfjmldFsGursN-I')">
+</div>
+<div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center shadow-2xl scale-75 group-hover:scale-100 transition-transform">
+<span class="material-symbols-outlined text-4xl fill-current">play_arrow</span>
+</div>
+</div>
+<div class="absolute bottom-3 right-3 bg-black/70 text-white text-xs px-2 py-1 rounded font-bold">18:15</div>
+</div>
+<h4 class="font-bold text-lg text-slate-900 dark:text-white group-hover:text-primary transition-colors">History of World Civilizations</h4>
+<p class="text-sm text-slate-500 dark:text-slate-400">An overview of major historical milestones across ages.</p>
+</div>
+</div>
+<div class="mt-12 text-center">
+<button class="px-8 py-3 border-2 border-primary text-primary font-bold rounded-lg hover:bg-primary hover:text-white transition-all">
+                        Load More Videos
+                    </button>
+</div>
+</section>
+</main>
+<!-- Footer Section -->
+<footer class="bg-slate-50 pt-24 pb-12 border-t border-slate-200">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid lg:grid-cols-4 gap-12 mb-16">
+<div class="col-span-1 lg:col-span-1">
+<div class="flex items-center gap-2 mb-6">
+<div class="size-8 bg-primary rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-[20px]">psychology</span>
+</div>
+<span class="text-xl font-black text-primary">ORPHOSYS</span>
+</div>
+<div class="space-y-6">
+<div>
+<h6 class="font-bold text-slate-900 mb-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">location_on</span>
+Howrah Office
+</h6>
+<p class="text-sm text-slate-600 leading-relaxed">
+45, Dumurjala Stadium Complex,<br/>
+Howrah, West Bengal - 711101
+</p>
+</div>
+<div>
+<h6 class="font-bold text-slate-900 mb-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">location_on</span>
+Kolkata Office
+</h6>
+<p class="text-sm text-slate-600 leading-relaxed">
+12B, Salt Lake Sector V,<br/>
+Kolkata, West Bengal - 700091
+</p>
+</div>
+</div>
+</div>
+<div>
+<h6 class="font-bold text-slate-900 mb-6 uppercase tracking-widest text-xs">Quick Links</h6>
+<ul class="space-y-4">
+<li><a class="text-sm text-slate-600 hover:text-primary transition-colors" href="../pages/courses_orphosys_education.html">Courses</a></li>
+<li><a class="text-sm text-slate-600 hover:text-primary transition-colors" href="../pages/affiliation_orphosys_education.html">Franchise</a></li>
+<li><a class="text-sm text-slate-600 hover:text-primary transition-colors" href="../pages/contact_us_orphosys_education.html">Contact Us</a></li>
+</ul>
+</div>
+<div class="col-span-1 lg:col-span-2">
+<h6 class="font-bold text-slate-900 mb-6 uppercase tracking-widest text-xs">Send Your Query</h6>
+<form class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<input class="bg-white border-slate-200 rounded-lg focus:ring-primary focus:border-primary text-sm p-3 w-full" placeholder="Full Name" type="text"/>
+<input class="bg-white border-slate-200 rounded-lg focus:ring-primary focus:border-primary text-sm p-3 w-full" placeholder="Email Address" type="email"/>
+<div class="col-span-1 md:col-span-2">
+<select class="bg-white border-slate-200 rounded-lg focus:ring-primary focus:border-primary text-sm p-3 w-full">
+<option>Select Enquiry Type</option>
+<option>Franchise Enquiry</option>
+<option>Offline Course Enquiry</option>
+<option>Online Course Enquiry</option>
+<option>Partnership Proposal</option>
+</select>
+</div>
+<div class="col-span-1 md:col-span-2">
+<textarea class="bg-white border-slate-200 rounded-lg focus:ring-primary focus:border-primary text-sm p-3 w-full" placeholder="Your Message" rows="3"></textarea>
+</div>
+<div class="col-span-1 md:col-span-2">
+<button class="w-full bg-primary text-white font-bold py-3 rounded-lg shadow-lg shadow-primary/20 hover:scale-[1.02] transition-all">Submit Enquiry</button>
+</div>
+</form>
+</div>
+</div>
+<div class="pt-12 border-t border-slate-200 flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="text-sm text-slate-500">Â© 2024 Orphosys Foundation. All rights reserved.</p>
+<div class="flex items-center gap-6">
+<a class="text-slate-400 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">social_leaderboard</span></a>
+<a class="text-slate-400 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">linked_camera</span></a>
+<a class="text-slate-400 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">mail</span></a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</body></html>
+
