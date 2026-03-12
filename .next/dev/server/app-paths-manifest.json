@@ -1,0 +1,9 @@
+{
+  "/contact/page": "app/contact/page.js",
+  "/courses/online-ready/page": "app/courses/online-ready/page.js",
+  "/gallery/photo/page": "app/gallery/photo/page.js",
+  "/page": "app/page.js",
+  "/portal/id-card/page": "app/portal/id-card/page.js",
+  "/registration-process/page": "app/registration-process/page.js",
+  "/student/login/page": "app/student/login/page.js"
+}

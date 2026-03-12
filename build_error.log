@@ -1,0 +1,64 @@
+Γû▓ Next.js 16.1.6 (Turbopack)
+
+  Creating an optimized production build ...
+
+> Build error occurred
+Error: Turbopack build failed with 3 errors:
+./app/globals.css
+Error evaluating Node.js code
+Error: It looks like you're trying to use `tailwindcss` directly as a PostCSS plugin. The PostCSS plugin has moved to a separate package, so to continue using Tailwind CSS with PostCSS you'll need to install `@tailwindcss/postcss` and update your PostCSS configuration.
+    [at at (C:\orphosys-education\node_modules\tailwindcss\dist\lib.js:38:1643)]
+    at turbopack:///[turbopack-node]/transforms/postcss.ts:56:14 [C:\orphosys-education\.next\build\chunks\[root-of-the-server]__51225daf._.js:139:20]
+    [at <anonymous>]
+    at Module.init (turbopack:///[turbopack-node]/transforms/postcss.ts:43:33) [C:\orphosys-education\.next\build\chunks\[root-of-the-server]__51225daf._.js:129:35]
+    at run (turbopack:///[turbopack-node]/ipc/evaluate.ts:77:20) [C:\orphosys-education\.next\build\chunks\[root-of-the-server]__974941ed._.js:429:26]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+
+./node_modules/swiper/modules/pagination.css
+Error evaluating Node.js code
+Error: It looks like you're trying to use `tailwindcss` directly as a PostCSS plugin. The PostCSS plugin has moved to a separate package, so to continue using Tailwind CSS with PostCSS you'll need to install `@tailwindcss/postcss` and update your PostCSS configuration.
+    [at at (C:\orphosys-education\node_modules\tailwindcss\dist\lib.js:38:1643)]
+    at turbopack:///[turbopack-node]/transforms/postcss.ts:56:14 [C:\orphosys-education\.next\build\chunks\[root-of-the-server]__51225daf._.js:139:20]
+    [at <anonymous>]
+    at Module.init (turbopack:///[turbopack-node]/transforms/postcss.ts:43:33) [C:\orphosys-education\.next\build\chunks\[root-of-the-server]__51225daf._.js:129:35]
+    at run (turbopack:///[turbopack-node]/ipc/evaluate.ts:77:20) [C:\orphosys-education\.next\build\chunks\[root-of-the-server]__974941ed._.js:429:26]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+
+Import trace:
+  Client Component Browser:
+    ./node_modules/swiper/modules/pagination.css [Client Component Browser]
+    ./components/home/PartnerSwiper.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+
+./node_modules/swiper/swiper.css
+Error evaluating Node.js code
+Error: It looks like you're trying to use `tailwindcss` directly as a PostCSS plugin. The PostCSS plugin has moved to a separate package, so to continue using Tailwind CSS with PostCSS you'll need to install `@tailwindcss/postcss` and update your PostCSS configuration.
+    [at at (C:\orphosys-education\node_modules\tailwindcss\dist\lib.js:38:1643)]
+    at turbopack:///[turbopack-node]/transforms/postcss.ts:56:14 [C:\orphosys-education\.next\build\chunks\[root-of-the-server]__51225daf._.js:139:20]
+    [at <anonymous>]
+    at Module.init (turbopack:///[turbopack-node]/transforms/postcss.ts:43:33) [C:\orphosys-education\.next\build\chunks\[root-of-the-server]__51225daf._.js:129:35]
+    at run (turbopack:///[turbopack-node]/ipc/evaluate.ts:77:20) [C:\orphosys-education\.next\build\chunks\[root-of-the-server]__974941ed._.js:429:26]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+
+Import trace:
+  Client Component Browser:
+    ./node_modules/swiper/swiper.css [Client Component Browser]
+    ./components/home/PartnerSwiper.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+
+    at Module.init (turbopack:///[turbopack-node]/transforms/postcss.ts:43:33) [C:\orphosys-education\.next\build\chunks\[root-of-the-server]__51225daf._.js:129:35])
+    at run (turbopack:///[turbopack-node]/ipc/evaluate.ts:77:20) [C:\orphosys-education\.next\build\chunks\[root-of-the-server]__974941ed._.js:429:26])
+    at Module.init (turbopack:///[turbopack-node]/transforms/postcss.ts:43:33) [C:\orphosys-education\.next\build\chunks\[root-of-the-server]__51225daf._.js:129:35])
+    at run (turbopack:///[turbopack-node]/ipc/evaluate.ts:77:20) [C:\orphosys-education\.next\build\chunks\[root-of-the-server]__974941ed._.js:429:26])
+    at Module.init (turbopack:///[turbopack-node]/transforms/postcss.ts:43:33) [C:\orphosys-education\.next\build\chunks\[root-of-the-server]__51225daf._.js:129:35])
+    at run (turbopack:///[turbopack-node]/ipc/evaluate.ts:77:20) [C:\orphosys-education\.next\build\chunks\[root-of-the-server]__974941ed._.js:429:26])

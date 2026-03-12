@@ -1,0 +1,15 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/affiliation-process/layout,_N_T_/affiliation-process/page,_N_T_/affiliation-process"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/affiliation-process/__PAGE__",
+    "/affiliation-process",
+    "/_index",
+    "/_head"
+  ]
+}

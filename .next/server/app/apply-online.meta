@@ -1,0 +1,15 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/apply-online/layout,_N_T_/apply-online/page,_N_T_/apply-online"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/apply-online/__PAGE__",
+    "/apply-online",
+    "/_index",
+    "/_head"
+  ]
+}
