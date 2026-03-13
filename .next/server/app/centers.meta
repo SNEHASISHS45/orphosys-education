@@ -2,13 +2,14 @@
   "headers": {
     "x-nextjs-stale-time": "300",
     "x-nextjs-prerender": "1",
-    "x-next-cache-tags": "_N_T_/layout,_N_T_/centers/layout,_N_T_/centers/page,_N_T_/centers"
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/(website)/layout,_N_T_/(website)/centers/layout,_N_T_/(website)/centers/page,_N_T_/centers"
   },
   "segmentPaths": [
     "/_tree",
     "/_full",
-    "/centers/__PAGE__",
-    "/centers",
+    "/!KHdlYnNpdGUp/centers/__PAGE__",
+    "/!KHdlYnNpdGUp/centers",
+    "/!KHdlYnNpdGUp",
     "/_index",
     "/_head"
   ]

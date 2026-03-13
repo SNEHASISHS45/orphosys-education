@@ -2,14 +2,15 @@
   "headers": {
     "x-nextjs-stale-time": "300",
     "x-nextjs-prerender": "1",
-    "x-next-cache-tags": "_N_T_/layout,_N_T_/portal/layout,_N_T_/portal/admit-card/layout,_N_T_/portal/admit-card/page,_N_T_/portal/admit-card"
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/(website)/layout,_N_T_/(website)/portal/layout,_N_T_/(website)/portal/admit-card/layout,_N_T_/(website)/portal/admit-card/page,_N_T_/portal/admit-card"
   },
   "segmentPaths": [
     "/_tree",
     "/_full",
-    "/portal/admit-card/__PAGE__",
-    "/portal/admit-card",
-    "/portal",
+    "/!KHdlYnNpdGUp/portal/admit-card/__PAGE__",
+    "/!KHdlYnNpdGUp/portal/admit-card",
+    "/!KHdlYnNpdGUp/portal",
+    "/!KHdlYnNpdGUp",
     "/_index",
     "/_head"
   ]

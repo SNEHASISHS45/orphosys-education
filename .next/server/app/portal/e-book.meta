@@ -2,14 +2,15 @@
   "headers": {
     "x-nextjs-stale-time": "300",
     "x-nextjs-prerender": "1",
-    "x-next-cache-tags": "_N_T_/layout,_N_T_/portal/layout,_N_T_/portal/e-book/layout,_N_T_/portal/e-book/page,_N_T_/portal/e-book"
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/(website)/layout,_N_T_/(website)/portal/layout,_N_T_/(website)/portal/e-book/layout,_N_T_/(website)/portal/e-book/page,_N_T_/portal/e-book"
   },
   "segmentPaths": [
     "/_tree",
     "/_full",
-    "/portal/e-book/__PAGE__",
-    "/portal/e-book",
-    "/portal",
+    "/!KHdlYnNpdGUp/portal/e-book/__PAGE__",
+    "/!KHdlYnNpdGUp/portal/e-book",
+    "/!KHdlYnNpdGUp/portal",
+    "/!KHdlYnNpdGUp",
     "/_index",
     "/_head"
   ]

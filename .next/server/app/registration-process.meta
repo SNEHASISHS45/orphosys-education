@@ -2,13 +2,14 @@
   "headers": {
     "x-nextjs-stale-time": "300",
     "x-nextjs-prerender": "1",
-    "x-next-cache-tags": "_N_T_/layout,_N_T_/registration-process/layout,_N_T_/registration-process/page,_N_T_/registration-process"
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/(website)/layout,_N_T_/(website)/registration-process/layout,_N_T_/(website)/registration-process/page,_N_T_/registration-process"
   },
   "segmentPaths": [
     "/_tree",
     "/_full",
-    "/registration-process/__PAGE__",
-    "/registration-process",
+    "/!KHdlYnNpdGUp/registration-process/__PAGE__",
+    "/!KHdlYnNpdGUp/registration-process",
+    "/!KHdlYnNpdGUp",
     "/_index",
     "/_head"
   ]

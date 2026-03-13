@@ -2,13 +2,14 @@
   "headers": {
     "x-nextjs-stale-time": "300",
     "x-nextjs-prerender": "1",
-    "x-next-cache-tags": "_N_T_/layout,_N_T_/affiliation-process/layout,_N_T_/affiliation-process/page,_N_T_/affiliation-process"
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/(website)/layout,_N_T_/(website)/affiliation-process/layout,_N_T_/(website)/affiliation-process/page,_N_T_/affiliation-process"
   },
   "segmentPaths": [
     "/_tree",
     "/_full",
-    "/affiliation-process/__PAGE__",
-    "/affiliation-process",
+    "/!KHdlYnNpdGUp/affiliation-process/__PAGE__",
+    "/!KHdlYnNpdGUp/affiliation-process",
+    "/!KHdlYnNpdGUp",
     "/_index",
     "/_head"
   ]

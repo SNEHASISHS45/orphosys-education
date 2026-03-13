@@ -2,13 +2,14 @@
   "headers": {
     "x-nextjs-stale-time": "300",
     "x-nextjs-prerender": "1",
-    "x-next-cache-tags": "_N_T_/layout,_N_T_/apply-online/layout,_N_T_/apply-online/page,_N_T_/apply-online"
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/(website)/layout,_N_T_/(website)/apply-online/layout,_N_T_/(website)/apply-online/page,_N_T_/apply-online"
   },
   "segmentPaths": [
     "/_tree",
     "/_full",
-    "/apply-online/__PAGE__",
-    "/apply-online",
+    "/!KHdlYnNpdGUp/apply-online/__PAGE__",
+    "/!KHdlYnNpdGUp/apply-online",
+    "/!KHdlYnNpdGUp",
     "/_index",
     "/_head"
   ]

@@ -2,28 +2,18 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { instructors, Instructor } from "@/data/instructors";
 import ProgramModal from "@/components/ui/ProgramModal";
-import { Program } from "@/data/programs";
-import { GraduationCap, Award, BookOpen } from "lucide-react";
+import { GraduationCap, Award, BookOpen, Facebook, Instagram, Linkedin } from "lucide-react";
 
-export default function InstructorSection() {
-  const [selectedInstructor, setSelectedInstructor] = useState<Program | null>(
-    null
-  );
+interface InstructorSectionProps {
+  team?: any[];
+}
 
-  const openModal = (inst: Instructor) => {
-    const mapped: Program = {
-      id: inst.id,
-      title: inst.name,
-      shortDesc: inst.role,
-      desc: inst.desc,
-      icon: inst.icon,
-      color: inst.color,
-      features: inst.features,
-      image: inst.image,
-    };
-    setSelectedInstructor(mapped);
+export default function InstructorSection({ team = [] }: InstructorSectionProps) {
+  const [selectedInstructor, setSelectedInstructor] = useState<any>(null);
+
+  const openModal = (inst: any) => {
+    setSelectedInstructor(inst);
   };
 
   return (
@@ -42,7 +32,7 @@ export default function InstructorSection() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
-          {instructors.map((inst, idx) => (
+          {team.map((inst, idx) => (
             <div
               key={inst.id}
               onClick={() => openModal(inst)}
@@ -52,12 +42,57 @@ export default function InstructorSection() {
               <div
                 className="relative w-full aspect-[4/5] rounded-[32px] overflow-hidden shadow-xl mb-6 border-4 border-slate-50 group-hover:border-primary/20 transition-all duration-500 group-hover:shadow-2xl group-hover:-translate-y-2"
               >
-                <Image
-                    src={inst.image}
+                {inst.imageUrl && (
+                  <Image
+                    src={inst.imageUrl}
                     alt={inst.name}
                     fill
                     className="object-cover object-top transition-transform duration-700 group-hover:scale-110"
-                />
+                  />
+                )}
+                
+                {/* Social Links Overlay - Premium Hover Effect */}
+                <div className="absolute inset-x-0 bottom-0 p-6 translate-y-full group-hover:translate-y-0 transition-transform duration-500 z-20">
+                   <div className="bg-white/80 backdrop-blur-xl rounded-2xl p-4 shadow-2xl border border-white/50 flex flex-col items-center">
+                      <div className="flex gap-3 mb-3">
+                         {inst.facebookUrl && (
+                            <a 
+                              href={inst.facebookUrl} 
+                              target="_blank" 
+                              rel="noopener noreferrer"
+                              onClick={(e) => e.stopPropagation()}
+                              className="size-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all scale-90 hover:scale-100"
+                            >
+                               <Facebook className="w-4 h-4" />
+                            </a>
+                         )}
+                         {inst.instagramUrl && (
+                            <a 
+                              href={inst.instagramUrl} 
+                              target="_blank" 
+                              rel="noopener noreferrer"
+                              onClick={(e) => e.stopPropagation()}
+                              className="size-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all scale-90 hover:scale-100"
+                            >
+                               <Instagram className="w-4 h-4" />
+                            </a>
+                         )}
+                         {inst.linkedinUrl && (
+                            <a 
+                              href={inst.linkedinUrl} 
+                              target="_blank" 
+                              rel="noopener noreferrer"
+                              onClick={(e) => e.stopPropagation()}
+                              className="size-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all scale-90 hover:scale-100"
+                            >
+                               <Linkedin className="w-4 h-4" />
+                            </a>
+                         )}
+                      </div>
+                      <p className="text-[10px] font-black text-slate-900 uppercase tracking-widest">Connect Professional</p>
+                   </div>
+                </div>
+
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6">
                    <div className="flex gap-2 mb-2">
                       <div className="p-1.5 bg-white/20 backdrop-blur-md rounded-lg"><GraduationCap className="w-4 h-4 text-white" /></div>
@@ -77,7 +112,15 @@ export default function InstructorSection() {
       </div>
 
       <ProgramModal
-        program={selectedInstructor}
+        program={selectedInstructor ? { 
+          ...selectedInstructor, 
+          image: selectedInstructor.imageUrl, 
+          desc: selectedInstructor.bio, 
+          shortDesc: selectedInstructor.role,
+          facebookUrl: selectedInstructor.facebookUrl,
+          instagramUrl: selectedInstructor.instagramUrl,
+          linkedinUrl: selectedInstructor.linkedinUrl
+        } : null}
         isOpen={!!selectedInstructor}
         onClose={() => setSelectedInstructor(null)}
       />

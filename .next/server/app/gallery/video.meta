@@ -2,14 +2,15 @@
   "headers": {
     "x-nextjs-stale-time": "300",
     "x-nextjs-prerender": "1",
-    "x-next-cache-tags": "_N_T_/layout,_N_T_/gallery/layout,_N_T_/gallery/video/layout,_N_T_/gallery/video/page,_N_T_/gallery/video"
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/(website)/layout,_N_T_/(website)/gallery/layout,_N_T_/(website)/gallery/video/layout,_N_T_/(website)/gallery/video/page,_N_T_/gallery/video"
   },
   "segmentPaths": [
     "/_tree",
     "/_full",
-    "/gallery/video/__PAGE__",
-    "/gallery/video",
-    "/gallery",
+    "/!KHdlYnNpdGUp/gallery/video/__PAGE__",
+    "/!KHdlYnNpdGUp/gallery/video",
+    "/!KHdlYnNpdGUp/gallery",
+    "/!KHdlYnNpdGUp",
     "/_index",
     "/_head"
   ]

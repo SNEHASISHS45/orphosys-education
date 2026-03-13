@@ -2,14 +2,15 @@
   "headers": {
     "x-nextjs-stale-time": "300",
     "x-nextjs-prerender": "1",
-    "x-next-cache-tags": "_N_T_/layout,_N_T_/portal/layout,_N_T_/portal/certificate/layout,_N_T_/portal/certificate/page,_N_T_/portal/certificate"
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/(website)/layout,_N_T_/(website)/portal/layout,_N_T_/(website)/portal/certificate/layout,_N_T_/(website)/portal/certificate/page,_N_T_/portal/certificate"
   },
   "segmentPaths": [
     "/_tree",
     "/_full",
-    "/portal/certificate/__PAGE__",
-    "/portal/certificate",
-    "/portal",
+    "/!KHdlYnNpdGUp/portal/certificate/__PAGE__",
+    "/!KHdlYnNpdGUp/portal/certificate",
+    "/!KHdlYnNpdGUp/portal",
+    "/!KHdlYnNpdGUp",
     "/_index",
     "/_head"
   ]

@@ -1,0 +1,12 @@
+var R=require("../../../chunks/[turbopack]_runtime.js")("server/app/api/search/route.js")
+R.c("server/chunks/[externals]_node:crypto_c77798cd._.js")
+R.c("server/chunks/lib_generated_client_runtime_client_999e3cdb.js")
+R.c("server/chunks/lib_generated_client_query_compiler_fast_bg_wasm-base64_be13fad2.js")
+R.c("server/chunks/lib_generated_client_a368c5be._.js")
+R.c("server/chunks/lib_prisma_ts_1adac556._.js")
+R.c("server/chunks/app_api_search_route_ts_a5b0cdaf._.js")
+R.c("server/chunks/[externals]__525f01c2._.js")
+R.c("server/chunks/[root-of-the-server]__9eb3c1bf._.js")
+R.c("server/chunks/_next-internal_server_app_api_search_route_actions_4244da48.js")
+R.m("[project]/node_modules/next/dist/esm/build/templates/app-route.js { INNER_APP_ROUTE => \"[project]/app/api/search/route.ts [app-route] (ecmascript)\" } [app-route] (ecmascript)")
+module.exports=R.m("[project]/node_modules/next/dist/esm/build/templates/app-route.js { INNER_APP_ROUTE => \"[project]/app/api/search/route.ts [app-route] (ecmascript)\" } [app-route] (ecmascript)").exports

@@ -1,5 +1,1126 @@
 {
-  "node": {},
+  "node": {
+    "003f77b890c68dde5a77862c0cb0961bf5a90712bf": {
+      "workers": {
+        "app/(website)/about/page": {
+          "moduleId": 93680,
+          "async": false,
+          "exportedName": "invalidateCacheAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/server-actions.js"
+        },
+        "app/(website)/affiliation-process/page": {
+          "moduleId": 24630,
+          "async": false,
+          "exportedName": "invalidateCacheAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/server-actions.js"
+        },
+        "app/(website)/affiliation/page": {
+          "moduleId": 61512,
+          "async": false,
+          "exportedName": "invalidateCacheAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/server-actions.js"
+        },
+        "app/(website)/apply-online/page": {
+          "moduleId": 51315,
+          "async": false,
+          "exportedName": "invalidateCacheAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/server-actions.js"
+        },
+        "app/(website)/centers/page": {
+          "moduleId": 45073,
+          "async": false,
+          "exportedName": "invalidateCacheAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/server-actions.js"
+        },
+        "app/(website)/contact/page": {
+          "moduleId": 25695,
+          "async": false,
+          "exportedName": "invalidateCacheAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/server-actions.js"
+        },
+        "app/(website)/courses/online-live/page": {
+          "moduleId": 59570,
+          "async": false,
+          "exportedName": "invalidateCacheAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/server-actions.js"
+        },
+        "app/(website)/courses/online-ready/page": {
+          "moduleId": 99285,
+          "async": false,
+          "exportedName": "invalidateCacheAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/server-actions.js"
+        },
+        "app/(website)/courses/page": {
+          "moduleId": 65961,
+          "async": false,
+          "exportedName": "invalidateCacheAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/server-actions.js"
+        },
+        "app/(website)/downloads/page": {
+          "moduleId": 93224,
+          "async": false,
+          "exportedName": "invalidateCacheAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/server-actions.js"
+        },
+        "app/(website)/gallery/photo/page": {
+          "moduleId": 89092,
+          "async": false,
+          "exportedName": "invalidateCacheAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/server-actions.js"
+        },
+        "app/(website)/gallery/video/page": {
+          "moduleId": 31399,
+          "async": false,
+          "exportedName": "invalidateCacheAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/server-actions.js"
+        },
+        "app/(website)/login/page": {
+          "moduleId": 40480,
+          "async": false,
+          "exportedName": "invalidateCacheAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/server-actions.js"
+        },
+        "app/(website)/page": {
+          "moduleId": 77533,
+          "async": false,
+          "exportedName": "invalidateCacheAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/server-actions.js"
+        },
+        "app/(website)/portal/admit-card/page": {
+          "moduleId": 69800,
+          "async": false,
+          "exportedName": "invalidateCacheAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/server-actions.js"
+        },
+        "app/(website)/portal/certificate/page": {
+          "moduleId": 37903,
+          "async": false,
+          "exportedName": "invalidateCacheAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/server-actions.js"
+        },
+        "app/(website)/portal/e-book/page": {
+          "moduleId": 29939,
+          "async": false,
+          "exportedName": "invalidateCacheAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/server-actions.js"
+        },
+        "app/(website)/portal/exam/page": {
+          "moduleId": 56120,
+          "async": false,
+          "exportedName": "invalidateCacheAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/server-actions.js"
+        },
+        "app/(website)/portal/id-card/page": {
+          "moduleId": 70614,
+          "async": false,
+          "exportedName": "invalidateCacheAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/server-actions.js"
+        },
+        "app/(website)/portal/job-notification/page": {
+          "moduleId": 45778,
+          "async": false,
+          "exportedName": "invalidateCacheAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/server-actions.js"
+        },
+        "app/(website)/portal/marksheet/page": {
+          "moduleId": 17305,
+          "async": false,
+          "exportedName": "invalidateCacheAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/server-actions.js"
+        },
+        "app/(website)/portal/mock-test/page": {
+          "moduleId": 88858,
+          "async": false,
+          "exportedName": "invalidateCacheAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/server-actions.js"
+        },
+        "app/(website)/registration-process/page": {
+          "moduleId": 6130,
+          "async": false,
+          "exportedName": "invalidateCacheAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/server-actions.js"
+        },
+        "app/(website)/student/login/page": {
+          "moduleId": 90313,
+          "async": false,
+          "exportedName": "invalidateCacheAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/server-actions.js"
+        },
+        "app/_not-found/page": {
+          "moduleId": 9101,
+          "async": false,
+          "exportedName": "invalidateCacheAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/server-actions.js"
+        },
+        "app/admin/courses/[id]/page": {
+          "moduleId": 36273,
+          "async": false,
+          "exportedName": "invalidateCacheAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/server-actions.js"
+        },
+        "app/admin/courses/page": {
+          "moduleId": 3631,
+          "async": false,
+          "exportedName": "invalidateCacheAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/server-actions.js"
+        },
+        "app/admin/login/page": {
+          "moduleId": 13244,
+          "async": false,
+          "exportedName": "invalidateCacheAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/server-actions.js"
+        },
+        "app/admin/page": {
+          "moduleId": 6187,
+          "async": false,
+          "exportedName": "invalidateCacheAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/server-actions.js"
+        },
+        "app/admin/partners/page": {
+          "moduleId": 3479,
+          "async": false,
+          "exportedName": "invalidateCacheAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/server-actions.js"
+        },
+        "app/admin/programs/page": {
+          "moduleId": 38543,
+          "async": false,
+          "exportedName": "invalidateCacheAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/server-actions.js"
+        },
+        "app/admin/sections/page": {
+          "moduleId": 96718,
+          "async": false,
+          "exportedName": "invalidateCacheAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/server-actions.js"
+        },
+        "app/admin/settings/page": {
+          "moduleId": 38357,
+          "async": false,
+          "exportedName": "invalidateCacheAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/server-actions.js"
+        },
+        "app/admin/team/page": {
+          "moduleId": 55020,
+          "async": false,
+          "exportedName": "invalidateCacheAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/server-actions.js"
+        },
+        "app/admin/users/page": {
+          "moduleId": 31228,
+          "async": false,
+          "exportedName": "invalidateCacheAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/server-actions.js"
+        }
+      },
+      "layer": {
+        "app/(website)/about/page": "action-browser",
+        "app/(website)/affiliation-process/page": "action-browser",
+        "app/(website)/affiliation/page": "action-browser",
+        "app/(website)/apply-online/page": "action-browser",
+        "app/(website)/centers/page": "action-browser",
+        "app/(website)/contact/page": "action-browser",
+        "app/(website)/courses/online-live/page": "action-browser",
+        "app/(website)/courses/online-ready/page": "action-browser",
+        "app/(website)/courses/page": "action-browser",
+        "app/(website)/downloads/page": "action-browser",
+        "app/(website)/gallery/photo/page": "action-browser",
+        "app/(website)/gallery/video/page": "action-browser",
+        "app/(website)/login/page": "action-browser",
+        "app/(website)/page": "action-browser",
+        "app/(website)/portal/admit-card/page": "action-browser",
+        "app/(website)/portal/certificate/page": "action-browser",
+        "app/(website)/portal/e-book/page": "action-browser",
+        "app/(website)/portal/exam/page": "action-browser",
+        "app/(website)/portal/id-card/page": "action-browser",
+        "app/(website)/portal/job-notification/page": "action-browser",
+        "app/(website)/portal/marksheet/page": "action-browser",
+        "app/(website)/portal/mock-test/page": "action-browser",
+        "app/(website)/registration-process/page": "action-browser",
+        "app/(website)/student/login/page": "action-browser",
+        "app/_not-found/page": "action-browser",
+        "app/admin/courses/[id]/page": "action-browser",
+        "app/admin/courses/page": "action-browser",
+        "app/admin/login/page": "action-browser",
+        "app/admin/page": "action-browser",
+        "app/admin/partners/page": "action-browser",
+        "app/admin/programs/page": "action-browser",
+        "app/admin/sections/page": "action-browser",
+        "app/admin/settings/page": "action-browser",
+        "app/admin/team/page": "action-browser",
+        "app/admin/users/page": "action-browser"
+      },
+      "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/server-actions.js",
+      "exportedName": "invalidateCacheAction"
+    },
+    "007e4c60fb84ed585b89c954f74f3c1b9cbb83cda9": {
+      "workers": {
+        "app/(website)/about/page": {
+          "moduleId": 93680,
+          "async": false,
+          "exportedName": "createOrReadKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/(website)/affiliation-process/page": {
+          "moduleId": 24630,
+          "async": false,
+          "exportedName": "createOrReadKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/(website)/affiliation/page": {
+          "moduleId": 61512,
+          "async": false,
+          "exportedName": "createOrReadKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/(website)/apply-online/page": {
+          "moduleId": 51315,
+          "async": false,
+          "exportedName": "createOrReadKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/(website)/centers/page": {
+          "moduleId": 45073,
+          "async": false,
+          "exportedName": "createOrReadKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/(website)/contact/page": {
+          "moduleId": 25695,
+          "async": false,
+          "exportedName": "createOrReadKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/(website)/courses/online-live/page": {
+          "moduleId": 59570,
+          "async": false,
+          "exportedName": "createOrReadKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/(website)/courses/online-ready/page": {
+          "moduleId": 99285,
+          "async": false,
+          "exportedName": "createOrReadKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/(website)/courses/page": {
+          "moduleId": 65961,
+          "async": false,
+          "exportedName": "createOrReadKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/(website)/downloads/page": {
+          "moduleId": 93224,
+          "async": false,
+          "exportedName": "createOrReadKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/(website)/gallery/photo/page": {
+          "moduleId": 89092,
+          "async": false,
+          "exportedName": "createOrReadKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/(website)/gallery/video/page": {
+          "moduleId": 31399,
+          "async": false,
+          "exportedName": "createOrReadKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/(website)/login/page": {
+          "moduleId": 40480,
+          "async": false,
+          "exportedName": "createOrReadKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/(website)/page": {
+          "moduleId": 77533,
+          "async": false,
+          "exportedName": "createOrReadKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/(website)/portal/admit-card/page": {
+          "moduleId": 69800,
+          "async": false,
+          "exportedName": "createOrReadKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/(website)/portal/certificate/page": {
+          "moduleId": 37903,
+          "async": false,
+          "exportedName": "createOrReadKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/(website)/portal/e-book/page": {
+          "moduleId": 29939,
+          "async": false,
+          "exportedName": "createOrReadKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/(website)/portal/exam/page": {
+          "moduleId": 56120,
+          "async": false,
+          "exportedName": "createOrReadKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/(website)/portal/id-card/page": {
+          "moduleId": 70614,
+          "async": false,
+          "exportedName": "createOrReadKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/(website)/portal/job-notification/page": {
+          "moduleId": 45778,
+          "async": false,
+          "exportedName": "createOrReadKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/(website)/portal/marksheet/page": {
+          "moduleId": 17305,
+          "async": false,
+          "exportedName": "createOrReadKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/(website)/portal/mock-test/page": {
+          "moduleId": 88858,
+          "async": false,
+          "exportedName": "createOrReadKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/(website)/registration-process/page": {
+          "moduleId": 6130,
+          "async": false,
+          "exportedName": "createOrReadKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/(website)/student/login/page": {
+          "moduleId": 90313,
+          "async": false,
+          "exportedName": "createOrReadKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/_not-found/page": {
+          "moduleId": 9101,
+          "async": false,
+          "exportedName": "createOrReadKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/admin/courses/[id]/page": {
+          "moduleId": 36273,
+          "async": false,
+          "exportedName": "createOrReadKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/admin/courses/page": {
+          "moduleId": 3631,
+          "async": false,
+          "exportedName": "createOrReadKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/admin/login/page": {
+          "moduleId": 13244,
+          "async": false,
+          "exportedName": "createOrReadKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/admin/page": {
+          "moduleId": 6187,
+          "async": false,
+          "exportedName": "createOrReadKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/admin/partners/page": {
+          "moduleId": 3479,
+          "async": false,
+          "exportedName": "createOrReadKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/admin/programs/page": {
+          "moduleId": 38543,
+          "async": false,
+          "exportedName": "createOrReadKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/admin/sections/page": {
+          "moduleId": 96718,
+          "async": false,
+          "exportedName": "createOrReadKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/admin/settings/page": {
+          "moduleId": 38357,
+          "async": false,
+          "exportedName": "createOrReadKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/admin/team/page": {
+          "moduleId": 55020,
+          "async": false,
+          "exportedName": "createOrReadKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/admin/users/page": {
+          "moduleId": 31228,
+          "async": false,
+          "exportedName": "createOrReadKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        }
+      },
+      "layer": {
+        "app/(website)/about/page": "rsc",
+        "app/(website)/affiliation-process/page": "rsc",
+        "app/(website)/affiliation/page": "rsc",
+        "app/(website)/apply-online/page": "rsc",
+        "app/(website)/centers/page": "rsc",
+        "app/(website)/contact/page": "rsc",
+        "app/(website)/courses/online-live/page": "rsc",
+        "app/(website)/courses/online-ready/page": "rsc",
+        "app/(website)/courses/page": "rsc",
+        "app/(website)/downloads/page": "rsc",
+        "app/(website)/gallery/photo/page": "rsc",
+        "app/(website)/gallery/video/page": "rsc",
+        "app/(website)/login/page": "rsc",
+        "app/(website)/page": "rsc",
+        "app/(website)/portal/admit-card/page": "rsc",
+        "app/(website)/portal/certificate/page": "rsc",
+        "app/(website)/portal/e-book/page": "rsc",
+        "app/(website)/portal/exam/page": "rsc",
+        "app/(website)/portal/id-card/page": "rsc",
+        "app/(website)/portal/job-notification/page": "rsc",
+        "app/(website)/portal/marksheet/page": "rsc",
+        "app/(website)/portal/mock-test/page": "rsc",
+        "app/(website)/registration-process/page": "rsc",
+        "app/(website)/student/login/page": "rsc",
+        "app/_not-found/page": "rsc",
+        "app/admin/courses/[id]/page": "rsc",
+        "app/admin/courses/page": "rsc",
+        "app/admin/login/page": "rsc",
+        "app/admin/page": "rsc",
+        "app/admin/partners/page": "rsc",
+        "app/admin/programs/page": "rsc",
+        "app/admin/sections/page": "rsc",
+        "app/admin/settings/page": "rsc",
+        "app/admin/team/page": "rsc",
+        "app/admin/users/page": "rsc"
+      },
+      "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js",
+      "exportedName": "createOrReadKeylessAction"
+    },
+    "00ee718f4abc821f5ba47d5fc168be260d4ed9e459": {
+      "workers": {
+        "app/(website)/about/page": {
+          "moduleId": 93680,
+          "async": false,
+          "exportedName": "deleteKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/(website)/affiliation-process/page": {
+          "moduleId": 24630,
+          "async": false,
+          "exportedName": "deleteKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/(website)/affiliation/page": {
+          "moduleId": 61512,
+          "async": false,
+          "exportedName": "deleteKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/(website)/apply-online/page": {
+          "moduleId": 51315,
+          "async": false,
+          "exportedName": "deleteKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/(website)/centers/page": {
+          "moduleId": 45073,
+          "async": false,
+          "exportedName": "deleteKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/(website)/contact/page": {
+          "moduleId": 25695,
+          "async": false,
+          "exportedName": "deleteKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/(website)/courses/online-live/page": {
+          "moduleId": 59570,
+          "async": false,
+          "exportedName": "deleteKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/(website)/courses/online-ready/page": {
+          "moduleId": 99285,
+          "async": false,
+          "exportedName": "deleteKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/(website)/courses/page": {
+          "moduleId": 65961,
+          "async": false,
+          "exportedName": "deleteKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/(website)/downloads/page": {
+          "moduleId": 93224,
+          "async": false,
+          "exportedName": "deleteKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/(website)/gallery/photo/page": {
+          "moduleId": 89092,
+          "async": false,
+          "exportedName": "deleteKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/(website)/gallery/video/page": {
+          "moduleId": 31399,
+          "async": false,
+          "exportedName": "deleteKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/(website)/login/page": {
+          "moduleId": 40480,
+          "async": false,
+          "exportedName": "deleteKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/(website)/page": {
+          "moduleId": 77533,
+          "async": false,
+          "exportedName": "deleteKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/(website)/portal/admit-card/page": {
+          "moduleId": 69800,
+          "async": false,
+          "exportedName": "deleteKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/(website)/portal/certificate/page": {
+          "moduleId": 37903,
+          "async": false,
+          "exportedName": "deleteKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/(website)/portal/e-book/page": {
+          "moduleId": 29939,
+          "async": false,
+          "exportedName": "deleteKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/(website)/portal/exam/page": {
+          "moduleId": 56120,
+          "async": false,
+          "exportedName": "deleteKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/(website)/portal/id-card/page": {
+          "moduleId": 70614,
+          "async": false,
+          "exportedName": "deleteKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/(website)/portal/job-notification/page": {
+          "moduleId": 45778,
+          "async": false,
+          "exportedName": "deleteKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/(website)/portal/marksheet/page": {
+          "moduleId": 17305,
+          "async": false,
+          "exportedName": "deleteKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/(website)/portal/mock-test/page": {
+          "moduleId": 88858,
+          "async": false,
+          "exportedName": "deleteKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/(website)/registration-process/page": {
+          "moduleId": 6130,
+          "async": false,
+          "exportedName": "deleteKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/(website)/student/login/page": {
+          "moduleId": 90313,
+          "async": false,
+          "exportedName": "deleteKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/_not-found/page": {
+          "moduleId": 9101,
+          "async": false,
+          "exportedName": "deleteKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/admin/courses/[id]/page": {
+          "moduleId": 36273,
+          "async": false,
+          "exportedName": "deleteKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/admin/courses/page": {
+          "moduleId": 3631,
+          "async": false,
+          "exportedName": "deleteKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/admin/login/page": {
+          "moduleId": 13244,
+          "async": false,
+          "exportedName": "deleteKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/admin/page": {
+          "moduleId": 6187,
+          "async": false,
+          "exportedName": "deleteKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/admin/partners/page": {
+          "moduleId": 3479,
+          "async": false,
+          "exportedName": "deleteKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/admin/programs/page": {
+          "moduleId": 38543,
+          "async": false,
+          "exportedName": "deleteKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/admin/sections/page": {
+          "moduleId": 96718,
+          "async": false,
+          "exportedName": "deleteKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/admin/settings/page": {
+          "moduleId": 38357,
+          "async": false,
+          "exportedName": "deleteKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/admin/team/page": {
+          "moduleId": 55020,
+          "async": false,
+          "exportedName": "deleteKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/admin/users/page": {
+          "moduleId": 31228,
+          "async": false,
+          "exportedName": "deleteKeylessAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        }
+      },
+      "layer": {
+        "app/(website)/about/page": "action-browser",
+        "app/(website)/affiliation-process/page": "action-browser",
+        "app/(website)/affiliation/page": "action-browser",
+        "app/(website)/apply-online/page": "action-browser",
+        "app/(website)/centers/page": "action-browser",
+        "app/(website)/contact/page": "action-browser",
+        "app/(website)/courses/online-live/page": "action-browser",
+        "app/(website)/courses/online-ready/page": "action-browser",
+        "app/(website)/courses/page": "action-browser",
+        "app/(website)/downloads/page": "action-browser",
+        "app/(website)/gallery/photo/page": "action-browser",
+        "app/(website)/gallery/video/page": "action-browser",
+        "app/(website)/login/page": "action-browser",
+        "app/(website)/page": "action-browser",
+        "app/(website)/portal/admit-card/page": "action-browser",
+        "app/(website)/portal/certificate/page": "action-browser",
+        "app/(website)/portal/e-book/page": "action-browser",
+        "app/(website)/portal/exam/page": "action-browser",
+        "app/(website)/portal/id-card/page": "action-browser",
+        "app/(website)/portal/job-notification/page": "action-browser",
+        "app/(website)/portal/marksheet/page": "action-browser",
+        "app/(website)/portal/mock-test/page": "action-browser",
+        "app/(website)/registration-process/page": "action-browser",
+        "app/(website)/student/login/page": "action-browser",
+        "app/_not-found/page": "action-browser",
+        "app/admin/courses/[id]/page": "action-browser",
+        "app/admin/courses/page": "action-browser",
+        "app/admin/login/page": "action-browser",
+        "app/admin/page": "action-browser",
+        "app/admin/partners/page": "action-browser",
+        "app/admin/programs/page": "action-browser",
+        "app/admin/sections/page": "action-browser",
+        "app/admin/settings/page": "action-browser",
+        "app/admin/team/page": "action-browser",
+        "app/admin/users/page": "action-browser"
+      },
+      "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js",
+      "exportedName": "deleteKeylessAction"
+    },
+    "4094e1ea98d255fead121130c265ca0af4c97d91ff": {
+      "workers": {
+        "app/(website)/about/page": {
+          "moduleId": 93680,
+          "async": false,
+          "exportedName": "syncKeylessConfigAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/(website)/affiliation-process/page": {
+          "moduleId": 24630,
+          "async": false,
+          "exportedName": "syncKeylessConfigAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/(website)/affiliation/page": {
+          "moduleId": 61512,
+          "async": false,
+          "exportedName": "syncKeylessConfigAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/(website)/apply-online/page": {
+          "moduleId": 51315,
+          "async": false,
+          "exportedName": "syncKeylessConfigAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/(website)/centers/page": {
+          "moduleId": 45073,
+          "async": false,
+          "exportedName": "syncKeylessConfigAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/(website)/contact/page": {
+          "moduleId": 25695,
+          "async": false,
+          "exportedName": "syncKeylessConfigAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/(website)/courses/online-live/page": {
+          "moduleId": 59570,
+          "async": false,
+          "exportedName": "syncKeylessConfigAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/(website)/courses/online-ready/page": {
+          "moduleId": 99285,
+          "async": false,
+          "exportedName": "syncKeylessConfigAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/(website)/courses/page": {
+          "moduleId": 65961,
+          "async": false,
+          "exportedName": "syncKeylessConfigAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/(website)/downloads/page": {
+          "moduleId": 93224,
+          "async": false,
+          "exportedName": "syncKeylessConfigAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/(website)/gallery/photo/page": {
+          "moduleId": 89092,
+          "async": false,
+          "exportedName": "syncKeylessConfigAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/(website)/gallery/video/page": {
+          "moduleId": 31399,
+          "async": false,
+          "exportedName": "syncKeylessConfigAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/(website)/login/page": {
+          "moduleId": 40480,
+          "async": false,
+          "exportedName": "syncKeylessConfigAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/(website)/page": {
+          "moduleId": 77533,
+          "async": false,
+          "exportedName": "syncKeylessConfigAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/(website)/portal/admit-card/page": {
+          "moduleId": 69800,
+          "async": false,
+          "exportedName": "syncKeylessConfigAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/(website)/portal/certificate/page": {
+          "moduleId": 37903,
+          "async": false,
+          "exportedName": "syncKeylessConfigAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/(website)/portal/e-book/page": {
+          "moduleId": 29939,
+          "async": false,
+          "exportedName": "syncKeylessConfigAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/(website)/portal/exam/page": {
+          "moduleId": 56120,
+          "async": false,
+          "exportedName": "syncKeylessConfigAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/(website)/portal/id-card/page": {
+          "moduleId": 70614,
+          "async": false,
+          "exportedName": "syncKeylessConfigAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/(website)/portal/job-notification/page": {
+          "moduleId": 45778,
+          "async": false,
+          "exportedName": "syncKeylessConfigAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/(website)/portal/marksheet/page": {
+          "moduleId": 17305,
+          "async": false,
+          "exportedName": "syncKeylessConfigAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/(website)/portal/mock-test/page": {
+          "moduleId": 88858,
+          "async": false,
+          "exportedName": "syncKeylessConfigAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/(website)/registration-process/page": {
+          "moduleId": 6130,
+          "async": false,
+          "exportedName": "syncKeylessConfigAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/(website)/student/login/page": {
+          "moduleId": 90313,
+          "async": false,
+          "exportedName": "syncKeylessConfigAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/_not-found/page": {
+          "moduleId": 9101,
+          "async": false,
+          "exportedName": "syncKeylessConfigAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/admin/courses/[id]/page": {
+          "moduleId": 36273,
+          "async": false,
+          "exportedName": "syncKeylessConfigAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/admin/courses/page": {
+          "moduleId": 3631,
+          "async": false,
+          "exportedName": "syncKeylessConfigAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/admin/login/page": {
+          "moduleId": 13244,
+          "async": false,
+          "exportedName": "syncKeylessConfigAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/admin/page": {
+          "moduleId": 6187,
+          "async": false,
+          "exportedName": "syncKeylessConfigAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/admin/partners/page": {
+          "moduleId": 3479,
+          "async": false,
+          "exportedName": "syncKeylessConfigAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/admin/programs/page": {
+          "moduleId": 38543,
+          "async": false,
+          "exportedName": "syncKeylessConfigAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/admin/sections/page": {
+          "moduleId": 96718,
+          "async": false,
+          "exportedName": "syncKeylessConfigAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/admin/settings/page": {
+          "moduleId": 38357,
+          "async": false,
+          "exportedName": "syncKeylessConfigAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/admin/team/page": {
+          "moduleId": 55020,
+          "async": false,
+          "exportedName": "syncKeylessConfigAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        },
+        "app/admin/users/page": {
+          "moduleId": 31228,
+          "async": false,
+          "exportedName": "syncKeylessConfigAction",
+          "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        }
+      },
+      "layer": {
+        "app/(website)/about/page": "action-browser",
+        "app/(website)/affiliation-process/page": "action-browser",
+        "app/(website)/affiliation/page": "action-browser",
+        "app/(website)/apply-online/page": "action-browser",
+        "app/(website)/centers/page": "action-browser",
+        "app/(website)/contact/page": "action-browser",
+        "app/(website)/courses/online-live/page": "action-browser",
+        "app/(website)/courses/online-ready/page": "action-browser",
+        "app/(website)/courses/page": "action-browser",
+        "app/(website)/downloads/page": "action-browser",
+        "app/(website)/gallery/photo/page": "action-browser",
+        "app/(website)/gallery/video/page": "action-browser",
+        "app/(website)/login/page": "action-browser",
+        "app/(website)/page": "action-browser",
+        "app/(website)/portal/admit-card/page": "action-browser",
+        "app/(website)/portal/certificate/page": "action-browser",
+        "app/(website)/portal/e-book/page": "action-browser",
+        "app/(website)/portal/exam/page": "action-browser",
+        "app/(website)/portal/id-card/page": "action-browser",
+        "app/(website)/portal/job-notification/page": "action-browser",
+        "app/(website)/portal/marksheet/page": "action-browser",
+        "app/(website)/portal/mock-test/page": "action-browser",
+        "app/(website)/registration-process/page": "action-browser",
+        "app/(website)/student/login/page": "action-browser",
+        "app/_not-found/page": "action-browser",
+        "app/admin/courses/[id]/page": "action-browser",
+        "app/admin/courses/page": "action-browser",
+        "app/admin/login/page": "action-browser",
+        "app/admin/page": "action-browser",
+        "app/admin/partners/page": "action-browser",
+        "app/admin/programs/page": "action-browser",
+        "app/admin/sections/page": "action-browser",
+        "app/admin/settings/page": "action-browser",
+        "app/admin/team/page": "action-browser",
+        "app/admin/users/page": "action-browser"
+      },
+      "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js",
+      "exportedName": "syncKeylessConfigAction"
+    },
+    "6062ffab5d2922280cac3e519c5e75f5b9bd9d2b35": {
+      "workers": {
+        "app/admin/courses/[id]/page": {
+          "moduleId": 36273,
+          "async": false,
+          "exportedName": "updateUserRole",
+          "filename": "app/actions/user.ts"
+        },
+        "app/admin/courses/page": {
+          "moduleId": 3631,
+          "async": false,
+          "exportedName": "updateUserRole",
+          "filename": "app/actions/user.ts"
+        },
+        "app/admin/login/page": {
+          "moduleId": 13244,
+          "async": false,
+          "exportedName": "updateUserRole",
+          "filename": "app/actions/user.ts"
+        },
+        "app/admin/page": {
+          "moduleId": 6187,
+          "async": false,
+          "exportedName": "updateUserRole",
+          "filename": "app/actions/user.ts"
+        },
+        "app/admin/partners/page": {
+          "moduleId": 3479,
+          "async": false,
+          "exportedName": "updateUserRole",
+          "filename": "app/actions/user.ts"
+        },
+        "app/admin/programs/page": {
+          "moduleId": 38543,
+          "async": false,
+          "exportedName": "updateUserRole",
+          "filename": "app/actions/user.ts"
+        },
+        "app/admin/sections/page": {
+          "moduleId": 96718,
+          "async": false,
+          "exportedName": "updateUserRole",
+          "filename": "app/actions/user.ts"
+        },
+        "app/admin/settings/page": {
+          "moduleId": 38357,
+          "async": false,
+          "exportedName": "updateUserRole",
+          "filename": "app/actions/user.ts"
+        },
+        "app/admin/team/page": {
+          "moduleId": 55020,
+          "async": false,
+          "exportedName": "updateUserRole",
+          "filename": "app/actions/user.ts"
+        },
+        "app/admin/users/page": {
+          "moduleId": 31228,
+          "async": false,
+          "exportedName": "updateUserRole",
+          "filename": "app/actions/user.ts"
+        }
+      },
+      "layer": {
+        "app/admin/courses/[id]/page": "action-browser",
+        "app/admin/courses/page": "action-browser",
+        "app/admin/login/page": "action-browser",
+        "app/admin/page": "action-browser",
+        "app/admin/partners/page": "action-browser",
+        "app/admin/programs/page": "action-browser",
+        "app/admin/sections/page": "action-browser",
+        "app/admin/settings/page": "action-browser",
+        "app/admin/team/page": "action-browser",
+        "app/admin/users/page": "action-browser"
+      },
+      "filename": "app/actions/user.ts",
+      "exportedName": "updateUserRole"
+    },
+    "60ec4d3e522029ee04e61e559c818ed59fb8818af0": {
+      "workers": {
+        "app/admin/users/page": {
+          "moduleId": 31228,
+          "async": false,
+          "exportedName": "inviteUser",
+          "filename": "app/actions/user.ts"
+        }
+      },
+      "layer": {
+        "app/admin/users/page": "action-browser"
+      },
+      "filename": "app/actions/user.ts",
+      "exportedName": "inviteUser"
+    },
+    "40c9eb6ee1ab4ebd2eb8aafeaebdd9c2f1ac312b2e": {
+      "workers": {
+        "app/admin/users/page": {
+          "moduleId": 31228,
+          "async": false,
+          "exportedName": "deleteUser",
+          "filename": "app/actions/user.ts"
+        }
+      },
+      "layer": {
+        "app/admin/users/page": "action-browser"
+      },
+      "filename": "app/actions/user.ts",
+      "exportedName": "deleteUser"
+    }
+  },
   "edge": {},
-  "encryptionKey": "7+P5tX4ntk29cNXEZfvNq7J08HT8yAJwFDcJiVUtu+Q="
+  "encryptionKey": "GAEOT8COqa8jiQAF5F2Nr/Hvdlt3B7CjfPGgdvlkryw="
 }

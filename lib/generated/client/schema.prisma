@@ -1,0 +1,118 @@
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["driverAdapters"]
+  engineType      = "library"
+  output          = "../lib/generated/client"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Contact {
+  id        Int      @id @default(autoincrement())
+  name      String
+  email     String
+  message   String
+  createdAt DateTime @default(now())
+}
+
+model Admin {
+  id        String   @id @default(cuid())
+  username  String   @unique
+  password  String
+  name      String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model GlobalSettings {
+  id            String   @id @default("singleton")
+  logoUrl       String?
+  footerLogoUrl String?
+  email         String?
+  phone         String?
+  address       String?
+  officeHours   String?
+  facebookUrl   String?
+  instagramUrl  String?
+  twitterUrl    String?
+  updatedAt     DateTime @updatedAt
+}
+
+model PageSection {
+  id        String   @id @default(cuid())
+  page      String // e.g., "home", "about", "contact"
+  section   String // e.g., "hero", "about-summary"
+  content   Json // Stores title, description, badge, etc. as JSON
+  updatedAt DateTime @updatedAt
+
+  @@unique([page, section], name: "page_section")
+}
+
+model Course {
+  id          String   @id @default(cuid())
+  slug        String   @unique
+  title       String
+  description String?  @db.Text
+  shortDesc   String?
+  icon        String?
+  image       String?
+  category    String?
+  duration    String?
+  level       String?
+  price       String?
+  features    String[]
+  isPopular   Boolean  @default(false)
+  isActive    Boolean  @default(true)
+  order       Int      @default(0)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model TeamMember {
+  id           String   @id @default(cuid())
+  name         String
+  role         String
+  imageUrl     String?
+  bio          String?  @db.Text
+  facebookUrl  String?
+  instagramUrl String?
+  linkedinUrl  String?
+  order        Int      @default(0)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+model Partner {
+  id        String   @id @default(cuid())
+  name      String
+  logoUrl   String
+  website   String?
+  order     Int      @default(0)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Program {
+  id        String   @id @default(cuid())
+  title     String
+  shortDesc String?
+  desc      String   @db.Text
+  icon      String
+  color     String?  @default("bg-primary/10 text-primary")
+  features  String[]
+  image     String?
+  order     Int      @default(0)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model GalleryItem {
+  id        String   @id @default(cuid())
+  type      String // "photo" or "video"
+  title     String?
+  url       String
+  thumbnail String?
+  createdAt DateTime @default(now())
+}

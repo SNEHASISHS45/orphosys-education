@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 6, "column": 0}, "map": {"version":3,"sources":["file:///C:/orphosys-education/lib/prisma.ts"],"sourcesContent":["import { PrismaClient } from \"./generated/client\";\nimport { PrismaPg } from \"@prisma/adapter-pg\";\nimport pg from \"pg\";\nimport \"server-only\";\n\nconst prismaClientSingleton = () => {\n  const pool = new pg.Pool({\n    connectionString: process.env.DATABASE_URL,\n  });\n  const adapter = new PrismaPg(pool as any);\n  return new PrismaClient({\n    adapter: adapter as any, // Cast to any if types mismatch slightly across versions\n    log: [\"query\"],\n  });\n};\n\ndeclare global {\n  var prisma: undefined | ReturnType<typeof prismaClientSingleton>;\n}\n\nexport const prisma = globalThis.prisma && (globalThis.prisma as any).program \n  ? globalThis.prisma \n  : prismaClientSingleton();\n\nif (process.env.NODE_ENV !== \"production\") globalThis.prisma = prisma;\n"],"names":[],"mappings":";;;;AAAA;AACA;AACA;AACA;;;;;;;;;;AAEA,MAAM,wBAAwB;IAC5B,MAAM,OAAO,IAAI,wJAAE,CAAC,IAAI,CAAC;QACvB,kBAAkB,QAAQ,GAAG,CAAC,YAAY;IAC5C;IACA,MAAM,UAAU,IAAI,yKAAQ,CAAC;IAC7B,OAAO,IAAI,qJAAY,CAAC;QACtB,SAAS;QACT,KAAK;YAAC;SAAQ;IAChB;AACF;AAMO,MAAM,SAAS,WAAW,MAAM,IAAI,AAAC,WAAW,MAAM,CAAS,OAAO,GACzE,WAAW,MAAM,GACjB;AAEJ,wCAA2C,WAAW,MAAM,GAAG"}}]
+}

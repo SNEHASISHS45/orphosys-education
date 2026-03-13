@@ -2,14 +2,15 @@
   "headers": {
     "x-nextjs-stale-time": "300",
     "x-nextjs-prerender": "1",
-    "x-next-cache-tags": "_N_T_/layout,_N_T_/courses/layout,_N_T_/courses/online-ready/layout,_N_T_/courses/online-ready/page,_N_T_/courses/online-ready"
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/(website)/layout,_N_T_/(website)/courses/layout,_N_T_/(website)/courses/online-ready/layout,_N_T_/(website)/courses/online-ready/page,_N_T_/courses/online-ready"
   },
   "segmentPaths": [
     "/_tree",
     "/_full",
-    "/courses/online-ready/__PAGE__",
-    "/courses/online-ready",
-    "/courses",
+    "/!KHdlYnNpdGUp/courses/online-ready/__PAGE__",
+    "/!KHdlYnNpdGUp/courses/online-ready",
+    "/!KHdlYnNpdGUp/courses",
+    "/!KHdlYnNpdGUp",
     "/_index",
     "/_head"
   ]

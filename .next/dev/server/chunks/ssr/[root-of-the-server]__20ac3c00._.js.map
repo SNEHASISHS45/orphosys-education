@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 28, "column": 0}, "map": {"version":3,"sources":["file:///C:/orphosys-education/components/Providers.tsx"],"sourcesContent":["\"use client\"; export function Providers({ children }: { children: React.ReactNode }) { return <>{children}</>; }"],"names":[],"mappings":";;;;;AAAA;;AAAqB,SAAS,UAAU,EAAE,QAAQ,EAAiC;IAAI,qBAAO;kBAAG;;AAAc"}}]
+}

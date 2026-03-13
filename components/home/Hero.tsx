@@ -4,7 +4,11 @@ import Link from "next/link";
 import { GraduationCap, Briefcase, Users } from "lucide-react";
 import Image from "next/image";
 
-export default function Hero() {
+interface HeroProps {
+  content?: any;
+}
+
+export default function Hero({ content }: HeroProps) {
   return (
     <section className="relative bg-white pt-8 pb-32 overflow-hidden">
       {/* Background Gradients for Wow Factor */}
@@ -18,27 +22,31 @@ export default function Hero() {
           <div className="animate-fade-in-up">
             <span className="inline-flex items-center px-5 py-2 mb-8 text-xs font-black tracking-widest uppercase text-white bg-primary rounded-full shadow-xl shadow-primary/20">
               <span className="w-2 h-2 bg-blue-300 rounded-full mr-2 animate-pulse"></span>
-              Nurturing Young Minds
+              {content?.subtitle || "Nurturing Young Minds"}
             </span>
             <h1 className="text-4xl lg:text-5xl font-black text-slate-900 leading-tight mb-6 tracking-tight">
-              Welcome To <br />
-              <span className="text-gradient bg-gradient-to-r from-primary via-blue-600 to-blue-400 italic">
-                Orphosys
-              </span>{" "}
-              Foundation
+              {content?.title ? (
+                <div dangerouslySetInnerHTML={{ __html: content.title.replace("Orphosys", '<span class="text-gradient bg-gradient-to-r from-primary via-blue-600 to-blue-400 italic">Orphosys</span>') }} />
+              ) : (
+                <>
+                  Welcome To <br />
+                  <span className="text-gradient bg-gradient-to-r from-primary via-blue-600 to-blue-400 italic">
+                    Orphosys
+                  </span>{" "}
+                  Foundation
+                </>
+              )}
             </h1>
             <p className="text-lg text-slate-600 mb-8 leading-relaxed max-w-xl font-medium">
-              The Leading Child Brain Development Institute empowering young
-              minds through specialized programs and innovative learning
-              techniques.
+              {content?.description || "The Leading Child Brain Development Institute empowering young minds through specialized programs and innovative learning techniques."}
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
-                href="/courses"
+                href={content?.primaryBtnUrl || "/courses"}
                 className="px-8 py-3.5 bg-primary text-white font-bold rounded-xl shadow-lg shadow-primary/20 hover:shadow-primary/40 hover:-translate-y-0.5 transition-all flex items-center gap-2 text-base group"
               >
                 <GraduationCap className="w-5 h-5 transition-transform group-hover:rotate-12" />
-                Explore Courses
+                {content?.primaryBtnText || "Explore Courses"}
               </Link>
               <Link
                 href="/affiliation"
@@ -60,7 +68,7 @@ export default function Hero() {
               <div>
                 <div className="flex items-center gap-2">
                   <span className="text-xl font-black text-slate-900">5,000+</span>
-                  <span className="text-primary font-black">â˜…â˜…â˜…â˜…â˜…</span>
+                  <span className="text-primary font-black">★★★★★</span>
                 </div>
                 <p className="text-xs font-bold text-slate-500">Trusted by students nationwide</p>
               </div>
@@ -70,7 +78,7 @@ export default function Hero() {
           <div className="relative">
             <div className="relative rounded-[40px] overflow-hidden shadow-2xl border-8 border-slate-50 rotate-2 hover:rotate-0 transition-transform duration-700">
               <Image
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBt_ty9X06f1-dSYsHps6uJouN3HKA26kP28wVxfyMPJtxvGcO9ZoXB6ZafWDT82_aQZjwGQ-We3CopxzSsf64UaQj169k4p6l2S2wPTaIjBwdeD3nsqCi-0D6r0t5zHPXut3oabxksS8lF9EQUJnmxbDYaXFg_QPbjw6k-edcs6_3Ov69bLwCu8_t1-V8gXnaGCseQ-zqdvXOmaNGZd3yzVaRT7Qa7P93BWXlvjeR0jU9sBogb4Z6rFoNDOWWuq1CmxFl2QrkUFO0"
+                src={content?.image || "https://lh3.googleusercontent.com/aida-public/AB6AXuBt_ty9X06f1-dSYsHps6uJouN3HKA26kP28wVxfyMPJtxvGcO9ZoXB6ZafWDT82_aQZjwGQ-We3CopxzSsf64UaQj169k4p6l2S2wPTaIjBwdeD3nsqCi-0D6r0t5zHPXut3oabxksS8lF9EQUJnmxbDYaXFg_QPbjw6k-edcs6_3Ov69bLwCu8_t1-V8gXnaGCseQ-zqdvXOmaNGZd3yzVaRT7Qa7P93BWXlvjeR0jU9sBogb4Z6rFoNDOWWuq1CmxFl2QrkUFO0"}
                 alt="Students learning"
                 width={800}
                 height={600}

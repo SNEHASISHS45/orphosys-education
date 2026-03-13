@@ -1,7 +1,10 @@
-import { instructors } from "@/data/instructors";
 import Image from "next/image";
 
-export default function TeamGrid() {
+interface TeamGridProps {
+  team?: any[];
+}
+
+export default function TeamGrid({ team = [] }: TeamGridProps) {
   return (
     <section className="py-16 bg-slate-50">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-12">
@@ -11,23 +14,22 @@ export default function TeamGrid() {
         </p>
       </div>
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
-        {instructors.map((member) => (
+        {team.map((member) => (
           <div
             key={member.id}
             className="bg-white p-5 rounded-xl border border-slate-200 hover:shadow-md transition-all group"
           >
-            <div className="w-20 h-20 bg-primary/10 rounded-full mx-auto mb-3 overflow-hidden border-2 border-transparent group-hover:border-primary transition-all">
-              {member.image ? (
+            <div className="w-20 h-20 bg-primary/10 rounded-full mx-auto mb-3 overflow-hidden border-2 border-transparent group-hover:border-primary transition-all relative">
+              {member.imageUrl ? (
                 <Image
-                  src={member.image}
+                  src={member.imageUrl}
                   alt={member.name}
-                  width={96}
-                  height={96}
-                  className="w-full h-full object-cover"
+                  fill
+                  className="object-cover"
                 />
               ) : (
                 <div className="w-full h-full flex items-center justify-center text-primary">
-                  <span className="material-symbols-outlined text-4xl">{member.icon}</span>
+                  <span className="material-symbols-outlined text-4xl">person</span>
                 </div>
               )}
             </div>

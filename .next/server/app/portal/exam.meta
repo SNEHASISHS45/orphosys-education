@@ -2,14 +2,15 @@
   "headers": {
     "x-nextjs-stale-time": "300",
     "x-nextjs-prerender": "1",
-    "x-next-cache-tags": "_N_T_/layout,_N_T_/portal/layout,_N_T_/portal/exam/layout,_N_T_/portal/exam/page,_N_T_/portal/exam"
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/(website)/layout,_N_T_/(website)/portal/layout,_N_T_/(website)/portal/exam/layout,_N_T_/(website)/portal/exam/page,_N_T_/portal/exam"
   },
   "segmentPaths": [
     "/_tree",
     "/_full",
-    "/portal/exam/__PAGE__",
-    "/portal/exam",
-    "/portal",
+    "/!KHdlYnNpdGUp/portal/exam/__PAGE__",
+    "/!KHdlYnNpdGUp/portal/exam",
+    "/!KHdlYnNpdGUp/portal",
+    "/!KHdlYnNpdGUp",
     "/_index",
     "/_head"
   ]

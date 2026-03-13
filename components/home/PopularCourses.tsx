@@ -4,13 +4,17 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { MoveRight, Clock, GraduationCap, ChevronRight, Star } from "lucide-react";
-import { programs, Program } from "@/data/programs";
 import ProgramModal from "@/components/ui/ProgramModal";
 
-export default function PopularCourses() {
-  const [selectedProgram, setSelectedProgram] = useState<Program | null>(null);
+interface PopularCoursesProps {
+  courses?: any[];
+}
 
-  const popularCourses = programs.filter(p => ["vedic_mastery", "adv_abacus", "chess"].includes(p.id));
+export default function PopularCourses({ courses = [] }: PopularCoursesProps) {
+  const [selectedProgram, setSelectedProgram] = useState<any>(null);
+
+  // If no courses from DB, we could show fallback but let's assume courses are passed
+  const displayCourses = courses.length > 0 ? courses.slice(0, 3) : [];
 
   return (
     <section className="py-24 bg-slate-50 relative overflow-hidden">
@@ -34,7 +38,7 @@ export default function PopularCourses() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {popularCourses.map((course, idx) => (
+          {displayCourses.map((course: any, idx: number) => (
             <div
               key={course.id}
               onClick={() => setSelectedProgram(course)}
@@ -42,9 +46,9 @@ export default function PopularCourses() {
               className="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 group cursor-pointer border border-slate-100 hover:border-primary/20 animate-fade-in-up"
             >
               <div className="h-56 relative overflow-hidden">
-                {course.image && (
+                {course.imageUrl && (
                   <Image
-                    src={course.image}
+                    src={course.imageUrl}
                     alt={course.title}
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-700"
@@ -65,7 +69,7 @@ export default function PopularCourses() {
                     <Clock className="w-4 h-4 text-primary" /> {course.duration}
                   </span>
                   <span className="flex items-center gap-1.5">
-                    <GraduationCap className="w-4 h-4 text-primary" /> {course.level}
+                    <GraduationCap className="w-4 h-4 text-primary" /> {course.level || "Beginner"}
                   </span>
                 </div>
                 <div className="flex items-center justify-between pt-6 border-t border-slate-50">

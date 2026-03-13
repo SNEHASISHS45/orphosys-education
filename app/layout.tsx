@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Geist } from "next/font/google";
 import "./globals.css";
+import { ClerkProvider } from "@clerk/nextjs";
+import { Providers } from "@/components/Providers";
+import Script from "next/script";
+import { cn } from "@/lib/utils";
+
+const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
@@ -19,28 +25,23 @@ export const metadata: Metadata = {
   manifest: "/assets/favicon/site.webmanifest",
 };
 
-import Header from "@/components/common/Header";
-import Footer from "@/components/common/Footer";
-
-import Script from "next/script";
-
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable}`}>
+    <html lang="en" className={cn(inter.variable, "font-sans", geist.variable)}>
       <head>
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
       </head>
       <body className="font-display antialiased flex flex-col min-h-screen">
-        <Header />
-        <main className="flex-grow">
-          {children}
-        </main>
-        <Footer />
+        <ClerkProvider>
+          <Providers>
+            {children}
+          </Providers>
+        </ClerkProvider>
         <Script src="https://elfsightcdn.com/platform.js" strategy="lazyOnload" />
         <Script src="https://widgets.sociablekit.com/google-business-profile/widget.js" strategy="lazyOnload" />
       </body>

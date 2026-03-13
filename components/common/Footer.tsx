@@ -1,9 +1,14 @@
 "use client";
 
 import Link from "next/link";
-import { Mail, MapPin, Instagram, Facebook, Twitter, MessageSquare } from "lucide-react";
+import Image from "next/image";
+import { Mail, MapPin, Instagram, Facebook, Twitter, Phone } from "lucide-react";
 
-export default function Footer() {
+interface FooterProps {
+  settings: any;
+}
+
+export default function Footer({ settings }: FooterProps) {
   return (
     <footer className="bg-slate-50 border-t border-slate-200 mt-auto">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
@@ -11,25 +16,29 @@ export default function Footer() {
           {/* Brand & Addresses */}
           <div className="col-span-1 lg:col-span-1">
             <div className="flex items-center gap-2 mb-6">
-              <div className="size-8 bg-primary rounded-lg flex items-center justify-center">
-                <span className="material-symbols-outlined text-white text-[20px]">
-                  psychology
-                </span>
-              </div>
-              <span className="text-xl font-black text-primary uppercase">
-                Orphosys
-              </span>
+              {settings?.footerLogoUrl ? (
+                <Image src={settings.footerLogoUrl} alt="Orphosys" width={150} height={40} className="h-10 w-auto" />
+              ) : (
+                <>
+                  <div className="size-8 bg-primary rounded-lg flex items-center justify-center">
+                    <span className="material-symbols-outlined text-white text-[20px]">
+                      psychology
+                    </span>
+                  </div>
+                  <span className="text-xl font-black text-primary uppercase">
+                    Orphosys
+                  </span>
+                </>
+              )}
             </div>
             <div className="space-y-6">
               <div>
                 <h6 className="font-bold text-slate-900 mb-2 flex items-center gap-2 text-sm">
                   <MapPin className="w-4 h-4 text-primary" />
-                  Howrah Office
+                  Office Address
                 </h6>
-                <p className="text-sm text-slate-600 leading-relaxed">
-                  25 B/1 Jheel Road, Annapurna Apartment,
-                  <br />
-                  VivekNagar, Kolkata - 700031.
+                <p className="text-sm text-slate-600 leading-relaxed whitespace-pre-line">
+                  {settings?.address || `25 B/1 Jheel Road, Annapurna Apartment,\nVivekNagar, Kolkata - 700031.`}
                 </p>
               </div>
               <div>
@@ -38,8 +47,14 @@ export default function Footer() {
                   Email Support
                 </h6>
                 <p className="text-sm text-slate-600 leading-relaxed">
-                  contact@orphosyseducation.org
+                  {settings?.email || "contact@orphosyseducation.org"}
                 </p>
+                {settings?.phone && (
+                  <p className="text-sm text-slate-600 leading-relaxed mt-2 flex items-center gap-2">
+                    <Phone className="w-4 h-4 text-primary" />
+                    {settings.phone}
+                  </p>
+                )}
               </div>
             </div>
           </div>
@@ -109,16 +124,25 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="mt-20 pt-12 border-t border-slate-200 flex flex-col md:flex-row justify-between items-center gap-6">
           <p className="text-sm text-slate-500">
-            © 2024 Orphosys Foundation. All rights reserved.
+            © {new Date().getFullYear()} Orphosys Foundation. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
-            <Link className="text-slate-400 hover:text-primary transition-colors" href="#">
-              <Facebook className="w-5 h-5" />
-            </Link>
-            <Link className="text-slate-400 hover:text-primary transition-colors" href="#">
-              <Instagram className="w-5 h-5" />
-            </Link>
-            <Link className="text-slate-400 hover:text-primary transition-colors" href="#">
+            {settings?.facebookUrl && (
+              <Link className="text-slate-400 hover:text-primary transition-colors" href={settings.facebookUrl}>
+                <Facebook className="w-5 h-5" />
+              </Link>
+            )}
+            {settings?.instagramUrl && (
+              <Link className="text-slate-400 hover:text-primary transition-colors" href={settings.instagramUrl}>
+                <Instagram className="w-5 h-5" />
+              </Link>
+            )}
+            {settings?.twitterUrl && (
+              <Link className="text-slate-400 hover:text-primary transition-colors" href={settings.twitterUrl}>
+                <Twitter className="w-5 h-5" />
+              </Link>
+            )}
+            <Link className="text-slate-400 hover:text-primary transition-colors" href={`mailto:${settings?.email || 'contact@orphosyseducation.org'}`}>
               <Mail className="w-5 h-5" />
             </Link>
           </div>

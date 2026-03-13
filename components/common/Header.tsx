@@ -5,7 +5,11 @@ import Image from "next/image";
 import { useState } from "react";
 import { ChevronDown, Download, LogIn, Menu, X } from "lucide-react";
 
-export default function Header() {
+interface HeaderProps {
+  settings: any;
+}
+
+export default function Header({ settings }: HeaderProps) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
@@ -15,7 +19,7 @@ export default function Header() {
           <Link className="flex items-center" href="/">
             <Image
               className="h-16 w-auto transition-all duration-300 hover:scale-105"
-              src="/assets/nav_logo.png"
+              src={settings?.logoUrl || "/assets/nav_logo.png"}
               alt="Orphosys"
               width={200}
               height={64}

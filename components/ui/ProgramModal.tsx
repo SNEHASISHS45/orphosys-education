@@ -1,12 +1,13 @@
 "use client";
 
 import { motion, AnimatePresence } from "framer-motion";
-import { X, CheckCircle2, Award } from "lucide-react";
+import { X, CheckCircle2, Award, Facebook, Instagram, Linkedin } from "lucide-react";
 import Image from "next/image";
+// @ts-ignore
 import { Program } from "@/data/programs";
 
 interface ProgramModalProps {
-  program: Program | null;
+  program: (Partial<Program> & { image?: string; desc?: string; shortDesc?: string; facebookUrl?: string; instagramUrl?: string; linkedinUrl?: string }) | null;
   isOpen: boolean;
   onClose: () => void;
 }
@@ -52,14 +53,14 @@ export default function ProgramModal({
                 {program.image ? (
                   <Image
                     src={program.image}
-                    alt={program.title}
+                    alt={program.title || "Program Image"}
                     fill
                     className="object-cover object-center"
                   />
                 ) : (
-                  <div className={`w-full h-full flex items-center justify-center ${program.color}`}>
+                  <div className={`w-full h-full flex items-center justify-center ${program.color || "bg-slate-100"}`}>
                     <span className="material-symbols-outlined text-8xl opacity-20">
-                      {program.icon}
+                      {program.icon || "help"}
                     </span>
                   </div>
                 )}
@@ -71,16 +72,16 @@ export default function ProgramModal({
                 <div className="p-8 md:p-10 overflow-y-auto">
                   {/* Icon */}
                   <div
-                    className={`w-16 h-16 rounded-2xl flex items-center justify-center mb-6 shadow-lg ${program.color}`}
+                    className={`w-16 h-16 rounded-2xl flex items-center justify-center mb-6 shadow-lg ${program.color || "bg-primary text-white"}`}
                   >
                     <span className="material-symbols-outlined text-3xl">
-                      {program.icon}
+                      {program.icon || "help"}
                     </span>
                   </div>
 
                   {/* Title */}
                   <h3 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4">
-                    {program.title}
+                    {program.title || "Profile Detail"}
                   </h3>
 
                   {/* Description */}
@@ -94,8 +95,8 @@ export default function ProgramModal({
                     Key Features & Benefits
                   </h4>
 
-                  <ul className="grid sm:grid-cols-2 gap-4">
-                    {program.features.map((feature, index) => (
+                  <ul className="grid sm:grid-cols-2 gap-4 mb-8">
+                    {program.features?.map((feature, index) => (
                       <li
                         key={index}
                         className="flex items-center gap-3 text-slate-600 text-sm"
@@ -105,6 +106,30 @@ export default function ProgramModal({
                       </li>
                     ))}
                   </ul>
+
+                  {/* Social Links for Team Members */}
+                  {(program.facebookUrl || program.instagramUrl || program.linkedinUrl) && (
+                    <div className="pt-6 border-t border-slate-100 mb-8">
+                       <h4 className="font-semibold text-slate-900 mb-4 uppercase tracking-widest text-[10px]">Professional Channels</h4>
+                       <div className="flex gap-4">
+                          {program.facebookUrl && (
+                             <a href={program.facebookUrl} target="_blank" rel="noopener noreferrer" className="p-3 bg-slate-50 rounded-xl text-slate-600 hover:text-primary hover:bg-primary/5 transition-all">
+                                <Facebook className="w-5 h-5" />
+                             </a>
+                          )}
+                          {program.instagramUrl && (
+                             <a href={program.instagramUrl} target="_blank" rel="noopener noreferrer" className="p-3 bg-slate-50 rounded-xl text-slate-600 hover:text-primary hover:bg-primary/5 transition-all">
+                                <Instagram className="w-5 h-5" />
+                             </a>
+                          )}
+                          {program.linkedinUrl && (
+                             <a href={program.linkedinUrl} target="_blank" rel="noopener noreferrer" className="p-3 bg-slate-50 rounded-xl text-slate-600 hover:text-primary hover:bg-primary/5 transition-all">
+                                <Linkedin className="w-5 h-5" />
+                             </a>
+                          )}
+                       </div>
+                    </div>
+                  )}
                 </div>
 
                 {/* Sticky Footer */}

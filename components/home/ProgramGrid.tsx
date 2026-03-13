@@ -1,21 +1,42 @@
 "use client";
 
-import { useState } from "react";
-import { programs, Program } from "@/data/programs";
+import { useState, useEffect } from "react";
 import ProgramModal from "@/components/ui/ProgramModal";
 import { MoveRight, Smartphone } from "lucide-react";
 
 export default function ProgramGrid() {
-  const [selectedProgram, setSelectedProgram] = useState<Program | null>(null);
-  const mainPrograms = programs.slice(0, 8);
+  const [selectedProgram, setSelectedProgram] = useState<any>(null);
+  const [programs, setPrograms] = useState<any[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
 
-  const openModal = (program: Program) => {
+  useEffect(() => {
+    const fetchPrograms = async () => {
+      try {
+        const res = await fetch("/api/programs");
+        const data = await res.json();
+        setPrograms(data);
+      } catch (error) {
+        console.error("Error fetching programs:", error);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+    fetchPrograms();
+  }, []);
+
+  const openModal = (program: any) => {
     setSelectedProgram(program);
   };
 
   const closeModal = () => {
     setSelectedProgram(null);
   };
+
+  if (isLoading) return (
+    <div className="py-24 bg-slate-50 flex justify-center">
+       <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
+    </div>
+  );
 
   return (
     <section className="py-24 bg-slate-50 relative overflow-hidden">
@@ -33,7 +54,7 @@ export default function ProgramGrid() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {mainPrograms.map((program, idx) => (
+          {Array.isArray(programs) && programs.map((program, idx) => (
             <div
               key={program.id}
               onClick={() => openModal(program)}
@@ -49,7 +70,7 @@ export default function ProgramGrid() {
                   program.id === "app" ? "bg-primary text-white" : "bg-slate-50 text-primary"
                 }`}
               >
-                {program.id === "app" ? (
+                {program.icon === "smartphone" || program.id === "app" ? (
                    <Smartphone className="w-8 h-8" />
                 ) : (
                   <span className="material-symbols-outlined text-3xl font-light">
